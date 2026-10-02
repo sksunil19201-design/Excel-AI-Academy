@@ -1,0 +1,1036 @@
+/*==================================================*
+* EXCEL AI ACADEMY
+* MODULE PAGE
+* module.css
+*==================================================*/
+
+
+/*==================================================*
+* ROOT
+*==================================================*/
+
+:root {
+
+    --module-primary: #16a34a;
+    --module-primary-dark: #15803d;
+    --module-primary-light: #dcfce7;
+
+    --module-blue: #2563eb;
+    --module-blue-light: #eff6ff;
+
+    --module-bg: #f5f7fb;
+    --module-card: #ffffff;
+
+    --module-text: #111827;
+    --module-muted: #64748b;
+
+    --module-border: #e5e7eb;
+
+    --module-shadow:
+        0 4px 15px rgba(15, 23, 42, 0.06);
+
+    --module-shadow-hover:
+        0 10px 30px rgba(15, 23, 42, 0.10);
+
+    --module-radius: 16px;
+}
+
+
+/*==================================================*
+* RESET
+*==================================================*/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    margin: 0;
+    padding: 0;
+
+    background: var(--module-bg);
+
+    color: var(--module-text);
+
+    font-family:
+        Poppins,
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Arial,
+        sans-serif;
+
+    line-height: 1.6;
+}
+
+
+/*==================================================*
+* MAIN CONTAINER
+*==================================================*/
+
+.module-container {
+
+    width: 100%;
+
+    max-width: 1250px;
+
+    margin: 0 auto;
+
+    padding: 30px 28px 70px;
+}
+
+
+/*==================================================*
+* BACK BUTTON
+*==================================================*/
+
+.back-btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    margin-bottom: 22px;
+
+    padding: 9px 15px;
+
+    border: 1px solid var(--module-border);
+
+    border-radius: 9px;
+
+    background: #ffffff;
+
+    color: var(--module-primary-dark);
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    text-decoration: none;
+
+    box-shadow:
+        0 2px 8px rgba(15, 23, 42, 0.04);
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.back-btn i {
+
+    font-size: 13px;
+
+}
+
+.back-btn:hover {
+
+    background: var(--module-primary-light);
+
+    color: var(--module-primary-dark);
+
+    transform: translateX(-3px);
+
+    box-shadow:
+        0 5px 15px rgba(15, 23, 42, 0.08);
+}
+
+
+/*==================================================*
+* MODULE HEADER
+*==================================================*/
+
+.module-header {
+
+    position: relative;
+
+    overflow: hidden;
+
+    background: var(--module-card);
+
+    border: 1px solid var(--module-border);
+
+    border-radius: var(--module-radius);
+
+    padding: 30px;
+
+    margin-bottom: 22px;
+
+    box-shadow: var(--module-shadow);
+}
+
+
+/*==================================================*
+* HEADER ACCENT
+*==================================================*/
+
+.module-header::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 4px;
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--module-primary),
+            #22c55e,
+            var(--module-blue)
+        );
+}
+
+
+/*==================================================*
+* MODULE INFO
+*==================================================*/
+
+.module-info {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+}
+
+
+/*==================================================*
+* MODULE ICON
+*==================================================*/
+
+.module-icon {
+
+    width: 72px;
+    height: 72px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--module-primary-light),
+            #f0fdf4
+        );
+
+    color: var(--module-primary);
+
+    font-size: 30px;
+
+    box-shadow:
+        inset 0 0 0 1px rgba(22, 163, 74, 0.08);
+}
+
+
+/*==================================================*
+* MODULE TITLE
+*==================================================*/
+
+.module-info h1 {
+
+    margin: 0;
+
+    color: var(--module-primary);
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.8px;
+}
+
+.module-info h2 {
+
+    margin: 2px 0 7px;
+
+    color: var(--module-text);
+
+    font-size: clamp(25px, 4vw, 34px);
+
+    font-weight: 700;
+
+    line-height: 1.2;
+}
+
+
+/*==================================================*
+* MODULE DESCRIPTION
+*==================================================*/
+
+.module-info p {
+
+    max-width: 850px;
+
+    margin: 0;
+
+    color: var(--module-muted);
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/*==================================================*
+* PROGRESS CARD
+*==================================================*/
+
+.progress-card {
+
+    margin-bottom: 22px;
+
+    padding: 20px 22px;
+
+    background: var(--module-card);
+
+    border: 1px solid var(--module-border);
+
+    border-radius: var(--module-radius);
+
+    box-shadow: var(--module-shadow);
+}
+
+
+/*==================================================*
+* PROGRESS TOP
+*==================================================*/
+
+.progress-top {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 10px;
+
+    color: var(--module-text);
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+.progress-top span:last-child {
+
+    color: var(--module-primary);
+
+    font-weight: 700;
+}
+
+
+/*==================================================*
+* PROGRESS TRACK
+*==================================================*/
+
+.progress {
+
+    width: 100%;
+
+    height: 9px;
+
+    overflow: hidden;
+
+    background: #e2e8f0;
+
+    border-radius: 999px;
+}
+
+
+/*==================================================*
+* PROGRESS BAR
+*==================================================*/
+
+.progress-bar {
+
+    width: 0%;
+
+    height: 100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--module-primary),
+            #22c55e
+        );
+
+    border-radius: inherit;
+
+    transition: width 0.4s ease;
+}
+
+
+/*==================================================*
+* LESSON SEARCH
+*==================================================*/
+
+.lesson-search {
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    width: 100%;
+
+    margin-bottom: 24px;
+}
+
+
+/*==================================================*
+* SEARCH ICON
+*==================================================*/
+
+.lesson-search i {
+
+    position: absolute;
+
+    left: 16px;
+
+    color: #94a3b8;
+
+    font-size: 15px;
+
+    pointer-events: none;
+}
+
+
+/*==================================================*
+* SEARCH INPUT
+*==================================================*/
+
+.lesson-search input {
+
+    width: 100%;
+
+    height: 48px;
+
+    padding: 0 18px 0 44px;
+
+    border: 1px solid var(--module-border);
+
+    border-radius: 11px;
+
+    outline: none;
+
+    background: #ffffff;
+
+    color: var(--module-text);
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    box-shadow:
+        0 2px 8px rgba(15, 23, 42, 0.03);
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.lesson-search input:focus {
+
+    border-color: var(--module-primary);
+
+    box-shadow:
+        0 0 0 3px rgba(22, 163, 74, 0.10);
+}
+
+.lesson-search input::placeholder {
+
+    color: #94a3b8;
+}
+
+
+/*==================================================*
+* MODULE CONTENT
+*==================================================*/
+
+#moduleContent {
+
+    width: 100%;
+}
+
+
+/*==================================================*
+* SECTION CONTAINER
+*==================================================*/
+
+.sections-container,
+.module-sections {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+}
+
+
+/*==================================================*
+* SECTION CARD
+*==================================================*/
+
+.section-card,
+.module-section {
+
+    overflow: hidden;
+
+    background: var(--module-card);
+
+    border: 1px solid var(--module-border);
+
+    border-radius: var(--module-radius);
+
+    box-shadow: var(--module-shadow);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.section-card:hover,
+.module-section:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow: var(--module-shadow-hover);
+}
+
+
+/*==================================================*
+* SECTION HEADER
+*==================================================*/
+
+.section-header {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    padding: 18px 22px;
+
+    background: #ffffff;
+
+    border-bottom: 1px solid var(--module-border);
+}
+
+
+/*==================================================*
+* SECTION HEADER LEFT
+*==================================================*/
+
+.section-header-left {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    min-width: 0;
+}
+
+
+/*==================================================*
+* SECTION ICON
+*==================================================*/
+
+.section-icon {
+
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 11px;
+
+    background: var(--module-primary-light);
+
+    color: var(--module-primary);
+
+    font-size: 17px;
+}
+
+
+/*==================================================*
+* SECTION TITLE
+*==================================================*/
+
+.section-header h2,
+.section-title {
+
+    margin: 0;
+
+    color: var(--module-text);
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    line-height: 1.4;
+}
+
+
+/*==================================================*
+* LESSON COUNT
+*==================================================*/
+
+.lesson-count,
+.section-count {
+
+    flex-shrink: 0;
+
+    padding: 5px 10px;
+
+    background: var(--module-blue-light);
+
+    color: var(--module-blue);
+
+    border-radius: 999px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+}
+
+
+/*==================================================*
+* LESSON LIST
+*==================================================*/
+
+.lesson-list,
+.lessons {
+
+    display: flex;
+
+    flex-direction: column;
+
+    padding: 5px 0;
+}
+
+
+/*==================================================*
+* LESSON ITEM
+*==================================================*/
+
+.lesson-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    min-height: 58px;
+
+    padding: 10px 22px;
+
+    border-bottom: 1px solid #f1f5f9;
+
+    transition:
+        background 0.2s ease,
+        padding-left 0.2s ease;
+}
+
+.lesson-item:last-child {
+
+    border-bottom: none;
+}
+
+.lesson-item:hover {
+
+    background: #f8fafc;
+
+    padding-left: 27px;
+}
+
+
+/*==================================================*
+* LESSON ICON
+*==================================================*/
+
+.lesson-icon {
+
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 8px;
+
+    background: #f1f5f9;
+
+    color: var(--module-muted);
+
+    font-size: 13px;
+}
+
+
+/*==================================================*
+* LESSON LINK
+*==================================================*/
+
+.lesson-item a,
+.lesson-link {
+
+    flex: 1;
+
+    min-width: 0;
+
+    color: var(--module-text);
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+    text-decoration: none;
+
+    transition: color 0.2s ease;
+}
+
+.lesson-item a:hover,
+.lesson-link:hover {
+
+    color: var(--module-primary);
+}
+
+
+/*==================================================*
+* LESSON ARROW
+*==================================================*/
+
+.lesson-arrow {
+
+    flex-shrink: 0;
+
+    color: #94a3b8;
+
+    font-size: 13px;
+
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.lesson-item:hover .lesson-arrow {
+
+    color: var(--module-primary);
+
+    transform: translateX(3px);
+}
+
+
+/*==================================================*
+* COMPLETED LESSON
+*==================================================*/
+
+.lesson-item.completed {
+
+    background: #f0fdf4;
+}
+
+.lesson-item.completed .lesson-icon {
+
+    background: var(--module-primary-light);
+
+    color: var(--module-primary);
+}
+
+.lesson-item.completed a {
+
+    color: var(--module-primary-dark);
+}
+
+
+/*==================================================*
+* EMPTY STATE
+*==================================================*/
+
+.no-results,
+.empty-state {
+
+    padding: 45px 20px;
+
+    text-align: center;
+
+    color: var(--module-muted);
+
+    background: #ffffff;
+
+    border: 1px dashed var(--module-border);
+
+    border-radius: var(--module-radius);
+}
+
+
+/*==================================================*
+* SCROLLBAR
+*==================================================*/
+
+::-webkit-scrollbar {
+
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+
+    background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+
+    background: #cbd5e1;
+
+    border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+
+    background: #94a3b8;
+}
+
+
+/*==================================================*
+* TABLET
+*==================================================*/
+
+@media (max-width: 900px) {
+
+    .module-container {
+
+        padding: 24px 20px 55px;
+    }
+
+    .module-header {
+
+        padding: 26px 24px;
+    }
+
+    .progress-card {
+
+        padding: 18px 20px;
+    }
+
+    .section-header {
+
+        padding: 17px 20px;
+    }
+
+    .lesson-item {
+
+        padding: 10px 20px;
+    }
+
+    .lesson-item:hover {
+
+        padding-left: 24px;
+    }
+}
+
+
+/*==================================================*
+* MOBILE
+*==================================================*/
+
+@media (max-width: 600px) {
+
+    .module-container {
+
+        padding: 18px 14px 40px;
+    }
+
+    .back-btn {
+
+        margin-bottom: 16px;
+
+        font-size: 12px;
+    }
+
+    .module-header {
+
+        padding: 22px 18px;
+
+        border-radius: 13px;
+    }
+
+    .module-info {
+
+        align-items: flex-start;
+
+        gap: 14px;
+    }
+
+    .module-icon {
+
+        width: 54px;
+        height: 54px;
+
+        border-radius: 14px;
+
+        font-size: 22px;
+    }
+
+    .module-info h1 {
+
+        font-size: 12px;
+    }
+
+    .module-info h2 {
+
+        font-size: 24px;
+    }
+
+    .module-info p {
+
+        font-size: 13px;
+
+        line-height: 1.6;
+    }
+
+    .progress-card {
+
+        padding: 16px;
+
+        border-radius: 13px;
+    }
+
+    .lesson-search input {
+
+        height: 46px;
+
+        font-size: 13px;
+    }
+
+    .section-header {
+
+        padding: 15px 16px;
+    }
+
+    .section-header h2,
+    .section-title {
+
+        font-size: 15px;
+    }
+
+    .section-icon {
+
+        width: 36px;
+        height: 36px;
+
+        font-size: 15px;
+    }
+
+    .lesson-count,
+    .section-count {
+
+        padding: 4px 8px;
+
+        font-size: 10px;
+    }
+
+    .lesson-item {
+
+        gap: 10px;
+
+        min-height: 54px;
+
+        padding: 9px 16px;
+    }
+
+    .lesson-item:hover {
+
+        padding-left: 19px;
+    }
+
+    .lesson-item a,
+    .lesson-link {
+
+        font-size: 13px;
+    }
+
+    .lesson-arrow {
+
+        font-size: 12px;
+    }
+}
+
+
+/*==================================================*
+* SMALL MOBILE
+*==================================================*/
+
+@media (max-width: 420px) {
+
+    .module-info {
+
+        flex-direction: column;
+    }
+
+    .module-icon {
+
+        width: 50px;
+        height: 50px;
+    }
+
+    .module-info h2 {
+
+        font-size: 22px;
+    }
+
+    .section-header {
+
+        align-items: flex-start;
+    }
+
+    .section-header-left {
+
+        align-items: flex-start;
+    }
+
+    .lesson-count,
+    .section-count {
+
+        align-self: flex-start;
+    }
+}

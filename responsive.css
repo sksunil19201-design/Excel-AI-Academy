@@ -1,340 +1,464 @@
-/* =====================================
-   Excel AI V2
-   responsive.css
-===================================== */
+/*==================================================*
+* EXCEL AI ACADEMY
+* GLOBAL RESPONSIVE SYSTEM
+* responsive.css
+*==================================================*/
 
-/* Large Laptop */
 
-@media(max-width:1400px){
+/*==================================================*
+* GLOBAL RESPONSIVE FIX
+*==================================================*/
 
-    .main{
-
-        padding:25px;
-
-    }
-
-    #resultContainer{
-
-        grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-
-    }
-
+html,
+body{
+    width:100%;
+    max-width:100%;
+    overflow-x:hidden;
 }
 
-/* Laptop */
-
-@media(max-width:1200px){
-
-    .sidebar{
-
-        width:220px;
-
-    }
-
-    header h1{
-
-        font-size:28px;
-
-    }
-
-    .card{
-
-        padding:18px;
-
-    }
-
+img,
+svg,
+video,
+canvas{
+    max-width:100%;
 }
 
-/* Tablet */
+table{
+    max-width:100%;
+}
 
-@media(max-width:992px){
 
-    body{
+/*==================================================*
+* LARGE DESKTOP
+*==================================================*/
 
-        flex-direction:column;
+@media (min-width:1400px){
 
+    .learning-container,
+    .learning-content{
+        max-width:1400px;
     }
 
-    .sidebar{
-
-        width:100%;
-
-        height:auto;
-
-        padding:20px;
-
+    .module-grid{
+        grid-template-columns:repeat(3,minmax(0,1fr));
     }
 
-    .logo{
+    .formula-grid{
+        grid-template-columns:repeat(4,minmax(0,1fr));
+    }
+}
 
-        justify-content:center;
 
-        margin-bottom:20px;
+/*==================================================*
+* DESKTOP
+*==================================================*/
 
+@media (min-width:1200px){
+
+    .module-grid{
+        grid-template-columns:repeat(3,minmax(0,1fr));
     }
 
-    .history{
+    .formula-grid{
+        grid-template-columns:repeat(3,minmax(0,1fr));
+    }
+}
 
-        display:none;
 
+/*==================================================*
+* TABLET LANDSCAPE
+*==================================================*/
+
+@media (max-width:1199px) and (min-width:993px){
+
+    .module-grid{
+        grid-template-columns:repeat(2,minmax(0,1fr));
     }
 
-    .main{
-
-        padding:20px;
-
+    .formula-grid{
+        grid-template-columns:repeat(2,minmax(0,1fr));
     }
 
-    header{
-
-        flex-direction:column;
-
-        gap:15px;
-
-        text-align:center;
-
+    .learning-overview{
+        grid-template-columns:repeat(2,minmax(0,1fr));
     }
 
-    #resultContainer{
-
+    .learning-summary{
         grid-template-columns:1fr;
-
     }
-
-    .action-buttons{
-
-        flex-wrap:wrap;
-
-    }
-
 }
 
-/* Mobile */
 
-@media(max-width:768px){
+/*==================================================*
+* TABLET
+*==================================================*/
 
-    .sidebar{
+@media (max-width:992px){
 
-        padding:15px;
-
+    .learning-header-inner{
+        padding-left:22px;
+        padding-right:22px;
     }
 
-    .logo{
-
-        font-size:22px;
-
+    .learning-container,
+    .learning-content{
+        padding-left:22px;
+        padding-right:22px;
     }
 
-    .sidebar button{
-
-        width:100%;
-
+    .learning-layout{
+        grid-template-columns:220px minmax(0,1fr);
     }
 
-    header h1{
-
-        font-size:24px;
-
+    .module-grid,
+    .formula-grid{
+        gap:20px;
     }
 
-    header p{
-
-        font-size:14px;
-
+    .module-card,
+    .formula-card{
+        padding:23px;
     }
 
-    textarea{
-
-        font-size:15px;
-
-        min-height:120px;
-
-    }
-
-    #generateBtn{
-
-        width:100%;
-
-    }
-
-    .card{
-
-        padding:16px;
-
-    }
-
-    .card-title{
-
-        font-size:16px;
-
-    }
-
-    pre{
-
-        font-size:13px;
-
-        padding:14px;
-
-    }
-
-    #outputValue{
-
-        font-size:34px;
-
-    }
-
-    table{
-
-        display:block;
-
-        overflow-x:auto;
-
-        white-space:nowrap;
-
-    }
-
-    .action-buttons{
-
-        flex-direction:column;
-
-    }
-
-    .action-buttons button{
-
-        width:100%;
-
-    }
-
-}
-
-/* Small Mobile */
-
-@media(max-width:480px){
-
-    .main{
-
-        padding:12px;
-
-    }
-
-    header h1{
-
-        font-size:20px;
-
-    }
-
-    .prompt-area{
-
-        padding:15px;
-
-    }
-
-    textarea{
-
-        padding:12px;
-
-    }
-
-    .card{
-
-        border-radius:10px;
-
-        padding:14px;
-
-    }
-
-    .card-title{
-
-        font-size:15px;
-
-    }
-
-    #outputValue{
-
-        font-size:28px;
-
-    }
-
-    #themeBtn{
-
-        width:45px;
-
-        height:45px;
-
-        font-size:18px;
-
-    }
-
-}
-
-/* Landscape Phones */
-
-@media(max-height:500px){
-
-    .sidebar{
-
-        position:relative;
-
-    }
-
-}
-
-/* Print */
-
-@media print{
-
-    .sidebar,
-
-    .prompt-area,
-
-    .action-buttons,
-
-    #themeBtn{
-
+    .learning-brand-text small{
         display:none;
-
     }
+
+    .learning-user-info{
+        display:none;
+    }
+
+    .footer-main{
+        padding-left:25px;
+        padding-right:25px;
+    }
+}
+
+
+/*==================================================*
+* MOBILE — MAIN
+*==================================================*/
+
+@media (max-width:768px){
 
     body{
-
-        background:white;
-
+        font-size:14px;
     }
 
-    .main{
+    .learning-header-inner{
+        padding:12px 16px;
+        flex-wrap:wrap;
+        gap:12px;
+    }
 
+    .learning-brand{
+        min-width:0;
+    }
+
+    .learning-brand-text strong{
+        font-size:15px;
+    }
+
+    .learning-header-actions{
+        margin-left:auto;
+    }
+
+    .learning-search{
+        order:10;
+        flex-basis:100%;
         width:100%;
-
-        padding:0;
-
+        max-width:none;
     }
 
-    .card{
-
-        box-shadow:none;
-
-        border:1px solid #ccc;
-
-        break-inside:avoid;
-
-        margin-bottom:15px;
-
+    .learning-page{
+        min-height:calc(100vh - 120px);
     }
 
+    .learning-container,
+    .learning-content{
+        padding:25px 16px 45px;
+    }
+
+    .learning-layout{
+        display:block;
+        padding:20px 16px;
+    }
+
+    .learning-sidebar{
+        position:static;
+        display:none;
+    }
+
+    .learning-sidebar.open{
+        display:block;
+    }
+
+    .sidebar-toggle{
+        display:flex;
+    }
+
+    .module-grid,
+    .formula-grid{
+        grid-template-columns:1fr;
+    }
+
+    .learning-overview{
+        grid-template-columns:1fr;
+    }
+
+    .learning-summary{
+        grid-template-columns:1fr;
+    }
+
+    .section-header{
+        display:block;
+    }
+
+    .filter-box{
+        flex-direction:column;
+    }
+
+    .filter-box input,
+    .filter-box select{
+        width:100%;
+        min-width:0;
+    }
+
+    .topic-navigation{
+        flex-direction:column;
+    }
+
+    .topic-nav-btn,
+    .topic-nav-btn.next{
+        width:100%;
+        min-width:0;
+    }
+
+    .ai-actions{
+        flex-direction:column;
+        align-items:stretch;
+    }
+
+    .ai-generate{
+        width:100%;
+    }
+
+    .footer-main{
+        grid-template-columns:1fr;
+    }
+
+    .footer-bottom-inner{
+        flex-direction:column;
+        text-align:center;
+    }
 }
 
-/* Accessibility */
 
-@media(prefers-reduced-motion:reduce){
+/*==================================================*
+* MOBILE — SMALL
+*==================================================*/
 
-    *{
+@media (max-width:576px){
 
-        animation:none !important;
-
-        transition:none !important;
-
-        scroll-behavior:auto !important;
-
+    .learning-header-inner{
+        padding:10px 14px;
     }
 
+    .learning-brand-icon{
+        width:38px;
+        height:38px;
+        font-size:18px;
+    }
+
+    .learning-brand-text strong{
+        font-size:14px;
+    }
+
+    .header-action{
+        width:36px;
+        height:36px;
+    }
+
+    .learning-user-avatar{
+        width:36px;
+        height:36px;
+    }
+
+    .page-title h1,
+    .ai-header h1{
+        font-size:25px;
+    }
+
+    .topic-header h1{
+        font-size:25px;
+    }
+
+    .module-card,
+    .formula-card,
+    .content-card,
+    .summary-card,
+    .ai-card{
+        padding:19px;
+    }
+
+    .module-card h3{
+        font-size:21px;
+    }
+
+    .formula-card h3{
+        font-size:20px;
+    }
+
+    .content-card h2{
+        font-size:20px;
+    }
+
+    .code-block{
+        padding:16px;
+    }
+
+    .code-block pre{
+        font-size:12px;
+    }
+
+    .quiz-card{
+        padding:19px;
+    }
+
+    .quiz-actions{
+        flex-direction:column;
+    }
+
+    .quiz-actions button{
+        width:100%;
+    }
+
+    .lesson-actions{
+        flex-direction:column;
+        align-items:stretch;
+    }
+
+    .lesson-actions button,
+    .lesson-actions a{
+        width:100%;
+    }
+
+    .footer-main{
+        padding:32px 16px 25px;
+    }
+
+    .footer-bottom-inner{
+        padding:16px;
+    }
+}
+
+
+/*==================================================*
+* VERY SMALL MOBILE
+*==================================================*/
+
+@media (max-width:400px){
+
+    .learning-header-actions{
+        gap:5px;
+    }
+
+    .header-action{
+        width:34px;
+        height:34px;
+    }
+
+    .learning-user-avatar{
+        width:34px;
+        height:34px;
+        font-size:12px;
+    }
+
+    .learning-brand-text strong{
+        font-size:13px;
+    }
+
+    .category-pill{
+        padding:8px 11px;
+        font-size:11px;
+    }
+
+    .module-info{
+        font-size:12px;
+    }
+
+    .formula-footer{
+        flex-direction:column;
+        align-items:stretch;
+    }
+
+    .formula-footer button{
+        width:100%;
+    }
+
+    .ai-hints{
+        justify-content:flex-start;
+    }
+
+    .ai-hint{
+        font-size:10px;
+    }
+}
+
+
+/*==================================================*
+* LANDSCAPE MOBILE
+*==================================================*/
+
+@media (max-width:768px) and (orientation:landscape){
+
+    .learning-sidebar{
+        max-height:65vh;
+        overflow-y:auto;
+    }
+
+    .learning-container,
+    .learning-content{
+        padding-top:20px;
+    }
+}
+
+
+/*==================================================*
+* TOUCH DEVICES
+*==================================================*/
+
+@media (hover:none){
+
+    .module-card:hover,
+    .formula-card:hover,
+    .overview-card:hover{
+        transform:none;
+    }
+
+    .module-card button:hover,
+    .learning-btn:hover,
+    .ai-generate:hover{
+        transform:none;
+    }
+}
+
+
+/*==================================================*
+* ACCESSIBILITY
+*==================================================*/
+
+@media (prefers-reduced-motion:reduce){
+
+    html{
+        scroll-behavior:auto;
+    }
+
+    *,
+    *::before,
+    *::after{
+        animation-duration:.01ms !important;
+        animation-iteration-count:1 !important;
+        transition-duration:.01ms !important;
+    }
 }
