@@ -2093,7 +2093,7 @@ if (prevLesson) {
 
 
         location.href =
-    `lesson.html?module=${moduleId}&lesson=${nextLessonData.id}`;
+    `lesson.html?module=${moduleId}&lesson=${previousLesson.id}`;
 
     };
 
@@ -2197,7 +2197,7 @@ sessionStorage.setItem(
 );
 
 location.href =
-    `lesson.html?module=${moduleId}&lesson=${nextLessonData.id}`;
+    `lesson.html?module=${moduleId}&lesson=${previousLesson.id}`;
 
         }
 
