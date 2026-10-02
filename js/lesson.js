@@ -2092,7 +2092,7 @@ if (prevLesson) {
         );
 
 
-        location.href =
+    location.href =
     `lesson.html?module=${moduleId}&lesson=${previousLesson.id}`;
 
     };
