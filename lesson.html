@@ -1,0 +1,124 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <title>Lesson | Excel AI Academy</title>
+
+    <link rel="stylesheet" href="style/lesson.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    </head>
+
+    <body>
+
+    <div class="lesson-container">
+
+        <!-- Header -->
+        <header class="lesson-header">
+
+            <a href="module.html?id=1" class="back-btn">
+                <i class="fa-solid fa-arrow-left"></i>
+                Back to Module
+            </a>
+
+            <div class="lesson-title">
+
+                <span id="moduleName">Module 1</span>
+
+                <h1 id="lessonTitle">Loading...</h1>
+
+                <div class="lesson-meta">
+
+                    <span id="lessonDuration">
+                        <i class="fa-regular fa-clock"></i>
+                        15 Minutes
+                    </span>
+
+                    <span id="lessonDifficulty">
+                        <i class="fa-solid fa-signal"></i>
+                        Beginner
+                    </span>
+
+                    <span id="lessonCategory">
+                        <i class="fa-solid fa-folder"></i>
+                        Introduction
+                    </span>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- Progress -->
+
+        <section class="lesson-progress">
+
+            <div class="progress">
+
+                <div class="progress-bar"></div>
+
+            </div>
+
+        </section>
+
+        <!-- Lesson -->
+
+        <main id="lessonContent">
+
+        </main>
+
+        <!-- Bottom Navigation -->
+
+    <footer class="lesson-navigation">
+
+        <button id="prevLesson">
+
+            <i class="fa-solid fa-arrow-left"></i>
+
+            Previous Lesson
+
+        </button>
+
+
+        <!-- COMPLETE LESSON -->
+
+        <button id="completeLesson" class="complete-lesson-btn">
+
+            <i class="fa-solid fa-circle-check"></i>
+
+            Complete Lesson
+
+        </button>
+
+
+        <button id="nextLesson">
+
+            Next Lesson
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </button>
+
+    </footer>
+    </div>
+
+    <script src="js/excelCourse.js"></script>
+
+    <!-- Firebase -->
+    <script type="module" src="js/firebase-config.js"></script>
+
+    <!-- Lesson -->
+    <script type="module" src="js/lesson.js"></script>
+
+    </body>
+    </html>
