@@ -5256,7 +5256,7 @@ LESSON 22
         explanation:
             "Maan lijiye aap ek Monthly Sales Report bana rahe hain. Report title ko large Bold Font aur important values ko different Font Color se highlight kiya ja sakta hai.",
 
-        image: "image/lessons/lesson22.png",
+        image: "Image/lessons/lesson22.png",
 
         headers: [
             "Formatting",
@@ -5438,7 +5438,7 @@ LESSON 23
             "Maan lijiye aap Employee Report bana rahe hain. Employee Name ko Left, Department ko Center aur Salary ko Right align karne se table more readable ho sakti hai.",
 
         image:
-            "image/lessons/lesson23.png",
+            "Image/lessons/lesson23.png",
 
         headers: [
             "Data",
@@ -5616,7 +5616,7 @@ LESSON 24
             "Maan lijiye ek Sales Report mein Sales Amount, Achievement aur Date maintain ki ja rahi hai. Har value ko appropriate Number Format dena chahiye.",
 
         image:
-            "image/lessons/lesson24.png",
+            "Image/lessons/lesson24.png",
 
         headers: [
             "Value",
@@ -5799,7 +5799,7 @@ LESSON 25
             "Maan lijiye aap ek Monthly Sales Report prepare kar rahe hain. Header par Fill Color, table par Borders aur Total Row par special Cell Style apply ki ja sakti hai.",
 
         image:
-            "image/lessons/lesson25.png",
+            "Image/lessons/lesson25.png",
 
         headers: [
             "Formatting Tool",
@@ -5997,7 +5997,7 @@ LESSON 26
             "Maan lijiye aap ek Monthly Sales Report prepare kar rahe hain. Employee Sales calculate karne ke liye ek formula likhne ke baad Fill Handle se us formula ko multiple rows mein quickly copy kiya ja sakta hai.",
 
         image:
-            "image/lessons/lesson26.png",
+            "Image/lessons/lesson26.png",
 
         headers: [
             "Data Type",
@@ -6174,7 +6174,7 @@ LESSON 27
             "Maan lijiye Column A mein Full Names diye gaye hain aur aapko First Name alag Column mein chahiye. Pehle Cell mein First Name manually type karne ke baad Flash Fill use karne par Excel remaining First Names automatically identify karke fill kar sakta hai.",
 
         image:
-            "image/lessons/lesson27.png",
+            "Image/lessons/lesson27.png",
 
         headers: [
             "Original Data",
@@ -6350,7 +6350,7 @@ LESSON 28
             "Maan lijiye ek Sales Report mein formulas se calculated Total Sales values generate hui hain. Ab aapko formulas nahi balki sirf final results chahiye. Paste Special → Values ka use karke formulas ko fixed values mein convert kiya ja sakta hai.",
 
         image:
-            "image/lessons/lesson28.png",
+            "Image/lessons/lesson28.png",
 
         headers: [
             "Paste Special Option",
@@ -6529,7 +6529,7 @@ LESSON 29
             "Maan lijiye aap Employee Report prepare kar rahe hain aur Status Column mein sirf Active, Inactive ya On Leave options allow karne hain. Data Validation ka use karke ek Drop-down List create ki ja sakti hai.",
 
         image:
-            "image/lessons/lesson29.png",
+            "Image/lessons/lesson29.png",
 
         headers: [
             "Validation Type",
@@ -6707,7 +6707,7 @@ LESSON 30
             "Maan lijiye Column A mein Full Names stored hain, jaise Rahul Sharma. Aapko First Name aur Last Name alag Columns mein chahiye. Text to Columns mein Space ko Delimiter select karke Full Name ko automatically two Columns mein split kiya ja sakta hai.",
 
         image:
-            "image/lessons/lesson30.png",
+            "Image/lessons/lesson30.png",
 
         headers: [
             "Original Data",
@@ -6908,7 +6908,7 @@ LESSON 31
             "Maan lijiye aap ek Employee Report maintain kar rahe hain. Report mein ek new employee add karne ke liye existing records ke beech new Row insert ki ja sakti hai. Agar Department information ke liye ek new field chahiye, to new Column insert kiya ja sakta hai.",
 
         image:
-            "image/lessons/lesson31.png",
+            "Image/lessons/lesson31.png",
 
         headers: [
             "Action",
@@ -7088,7 +7088,7 @@ LESSON 32
             "Maan lijiye Employee Report mein Employee Name properly visible nahi ho raha hai kyunki Column narrow hai. Column Width increase ya AutoFit karke complete name ko easily visible banaya ja sakta hai.",
 
         image:
-            "image/lessons/lesson32.png",
+            "Image/lessons/lesson32.png",
 
         headers: [
             "Tool",
@@ -7268,7 +7268,7 @@ LESSON 33
             "Maan lijiye ek Sales Report mein kuch supporting calculation Columns hain jo final report mein show nahi karne hain. Un Columns ko Hide karke report ko clean rakha ja sakta hai. Jab calculation check karni ho, to Columns ko Unhide kiya ja sakta hai.",
 
         image:
-            "image/lessons/lesson33.png",
+            "Image/lessons/lesson33.png",
 
         headers: [
             "Action",
@@ -7448,7 +7448,7 @@ LESSON 34
             "Maan lijiye ek Sales Report mein 5000 rows hain. Jab aap neeche scroll karenge to Product, Quantity aur Sales jaise headings screen se disappear ho sakti hain. Freeze Top Row use karke headings ko continuously visible rakha ja sakta hai.",
 
         image:
-            "image/lessons/lesson34.png",
+            "Image/lessons/lesson34.png",
 
         headers: [
             "Tool",
@@ -7626,7 +7626,7 @@ LESSON 35
             "Maan lijiye aap ek Monthly Business Report prepare kar rahe hain. Ek Worksheet mein Sales Data, doosri mein Expenses, teesri mein Employee Data aur fourth mein Summary rakhi ja sakti hai. Isse complete Workbook organized aur easy to manage rahega.",
 
         image:
-            "image/lessons/lesson35.png",
+            "Image/lessons/lesson35.png",
 
         headers: [
             "Worksheet",
@@ -7827,7 +7827,7 @@ LESSON 36
             "Maan lijiye aapke paas Employee Sales Report hai aur aapko highest sales wale employees sabse upar dekhne hain. Sales Column ko Largest to Smallest sort karke highest sales se lowest sales tak complete data arrange kiya ja sakta hai.",
 
         image:
-            "image/lessons/lesson36.png",
+            "Image/lessons/lesson36.png",
 
         headers: [
             "Sort Type",
@@ -8005,7 +8005,7 @@ LESSON 37
             "Maan lijiye aapke paas Employee Sales Report mein different cities ke employees hain. Agar aapko sirf Mumbai employees ki sales dekhni hai, to City Column par Mumbai ka Filter apply karke sirf Mumbai ke records display kiye ja sakte hain.",
 
         image:
-            "image/lessons/lesson37.png",
+            "Image/lessons/lesson37.png",
 
         headers: [
             "Filter Type",
@@ -8185,7 +8185,7 @@ LESSON 38
             "Maan lijiye aapke paas Sales Data mein Product, Quantity, Price aur Total Sales Columns hain. Is range ko Excel Table mein convert karne par Filters automatically add ho jaate hain aur new records add karna bhi easier ho jata hai.",
 
         image:
-            "image/lessons/lesson38.png",
+            "Image/lessons/lesson38.png",
 
         headers: [
             "Table Feature",
@@ -8364,7 +8364,7 @@ LESSON 39
             "Maan lijiye aapke paas Employee Sales Report hai aur aapko ₹50,000 se zyada Sales wale employees ko quickly identify karna hai. Conditional Formatting mein Greater Than rule apply karke matching Sales Cells ko automatically highlight kiya ja sakta hai.",
 
         image:
-            "image/lessons/lesson39.png",
+            "Image/lessons/lesson39.png",
 
         headers: [
             "Conditional Format",
@@ -8543,7 +8543,7 @@ LESSON 40
             "Maan lijiye aap ek Monthly Sales Report prepare kar rahe hain. Agar Headers clear hain, data Excel Table mein hai, formulas consistent hain, unnecessary blank Rows avoid ki gayi hain aur formatting properly maintained hai, to report ko update aur analyze karna much easier ho jata hai.",
 
         image:
-            "image/lessons/lesson40.png",
+            "Image/lessons/lesson40.png",
 
         headers: [
             "Best Practice",
@@ -8761,7 +8761,7 @@ LESSON 41
             "Maan lijiye aap ek Sales Report prepare kar rahe hain. Product ka Price aur Quantity diya hua hai. Total Sales calculate karne ke liye Price ko Quantity se multiply kar sakte hain.",
 
         image:
-            "image/lessons/lesson41.png",
+            "Image/lessons/lesson41.png",
 
         headers: [
             "Product",
@@ -8933,7 +8933,7 @@ LESSON 42
             "Maan lijiye aap ek business expense report prepare kar rahe hain. Aapke paas Revenue aur Expenses ki information hai. Different calculations ke liye +, -, * aur / operators ka use kiya ja sakta hai.",
 
         image:
-            "image/lessons/lesson42.png",
+            "Image/lessons/lesson42.png",
 
         headers: [
             "Calculation",
@@ -9117,7 +9117,7 @@ LESSON 43
             "Maan lijiye aap ek Sales Report prepare kar rahe hain. Product ka Price column B mein aur Quantity column C mein hai. Total Sales calculate karne ke liye hum B2 aur C2 cell references ko formula mein use karenge.",
 
         image:
-            "image/lessons/lesson43.png",
+            "Image/lessons/lesson43.png",
 
         headers: [
             "Product",
@@ -9290,7 +9290,7 @@ LESSON 44
             "Maan lijiye aap ek Sales Report prepare kar rahe hain jahan har product ki Price aur Quantity di gayi hai. Pehle hum Relative Reference se Total Sales calculate karenge. Phir ek fixed Discount Rate ko har product ke Total Sales par apply karne ke liye Absolute Reference use karenge.",
 
         image:
-            "image/lessons/lesson44.png",
+            "Image/lessons/lesson44.png",
 
         headers: [
             "Product",
@@ -9472,7 +9472,7 @@ LESSON 45
             "Maan lijiye aap ek Sales Report prepare kar rahe hain jisme multiple products ke Price aur Quantity diye gaye hain. Pehle product ke Total Sales ke liye formula banakar Fill Handle se neeche copy kar sakte hain. Excel har row ke according cell references automatically adjust karega.",
 
         image:
-            "image/lessons/lesson45.png",
+            "Image/lessons/lesson45.png",
 
         headers: [
             "Product",
@@ -9657,7 +9657,7 @@ SECTION 2 START
                             "Maan lijiye aap ek Daily Sales Report prepare kar rahe hain. A2 se A5 cells mein different days ki sales amount di gayi hai. Total Sales calculate karne ke liye SUM function ka use karke poori range ka total ek hi formula se nikala ja sakta hai.",
 
                         image:
-                            "image/lessons/lesson46.png",
+                            "Image/lessons/lesson46.png",
 
                         headers: [
                             "Day",
