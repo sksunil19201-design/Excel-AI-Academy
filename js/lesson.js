@@ -2092,7 +2092,8 @@ if (prevLesson) {
         );
 
 
-        location.href = "/lesson";
+        location.href =
+    `lesson.html?module=${moduleId}&lesson=${nextLessonData.id}`;
 
     };
 
@@ -2142,7 +2143,7 @@ if (nextLesson) {
 
 
         location.href =
-            "/lesson";
+    `lesson.html?module=${moduleId}&lesson=${nextLessonData.id}`;
 
     };
 
@@ -2196,7 +2197,7 @@ sessionStorage.setItem(
 );
 
 location.href =
-    "/lesson";
+    `lesson.html?module=${moduleId}&lesson=${nextLessonData.id}`;
 
         }
 
@@ -2226,7 +2227,7 @@ sessionStorage.setItem(
 );
 
 location.href =
-    "/lesson";
+    `lesson.html?module=${moduleId}&lesson=${nextLessonData.id}`;
 
         }
 
