@@ -13,18 +13,44 @@ html,
 body{
     width:100%;
     max-width:100%;
+    margin:0;
     overflow-x:hidden;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing:border-box;
 }
 
 img,
 svg,
 video,
-canvas{
+canvas,
+iframe{
+    max-width:100%;
+    height:auto;
+}
+
+input,
+select,
+textarea,
+button{
     max-width:100%;
 }
 
 table{
+    width:100%;
     max-width:100%;
+}
+
+pre,
+code{
+    max-width:100%;
+}
+
+pre{
+    overflow-x:auto;
 }
 
 
@@ -102,12 +128,16 @@ table{
 
     .learning-container,
     .learning-content{
+        width:100%;
+        max-width:100%;
         padding-left:22px;
         padding-right:22px;
     }
 
     .learning-layout{
         grid-template-columns:220px minmax(0,1fr);
+        width:100%;
+        max-width:100%;
     }
 
     .module-grid,
@@ -118,6 +148,7 @@ table{
     .module-card,
     .formula-card{
         padding:23px;
+        min-width:0;
     }
 
     .learning-brand-text small{
@@ -141,11 +172,25 @@ table{
 
 @media (max-width:768px){
 
+    html,
+    body{
+        width:100%;
+        max-width:100%;
+        overflow-x:hidden;
+    }
+
     body{
         font-size:14px;
     }
 
+    .learning-header{
+        width:100%;
+        max-width:100%;
+    }
+
     .learning-header-inner{
+        width:100%;
+        max-width:100%;
         padding:12px 16px;
         flex-wrap:wrap;
         gap:12px;
@@ -153,14 +198,23 @@ table{
 
     .learning-brand{
         min-width:0;
+        max-width:100%;
+    }
+
+    .learning-brand-text{
+        min-width:0;
     }
 
     .learning-brand-text strong{
         font-size:15px;
+        white-space:nowrap;
+        overflow:hidden;
+        text-overflow:ellipsis;
     }
 
     .learning-header-actions{
         margin-left:auto;
+        min-width:0;
     }
 
     .learning-search{
@@ -168,25 +222,45 @@ table{
         flex-basis:100%;
         width:100%;
         max-width:none;
+        min-width:0;
     }
 
     .learning-page{
+        width:100%;
+        max-width:100%;
         min-height:calc(100vh - 120px);
+        overflow:hidden;
     }
 
     .learning-container,
     .learning-content{
+        width:100%;
+        max-width:100%;
+        min-width:0;
         padding:25px 16px 45px;
     }
 
     .learning-layout{
         display:block;
+        width:100%;
+        max-width:100%;
+        min-width:0;
         padding:20px 16px;
+    }
+
+    .learning-main,
+    .learning-sidebar,
+    .learning-content > *,
+    .learning-container > *{
+        max-width:100%;
+        min-width:0;
     }
 
     .learning-sidebar{
         position:static;
         display:none;
+        width:100%;
+        max-width:100%;
     }
 
     .learning-sidebar.open{
@@ -199,23 +273,44 @@ table{
 
     .module-grid,
     .formula-grid{
-        grid-template-columns:1fr;
+        grid-template-columns:minmax(0,1fr);
+        width:100%;
+        max-width:100%;
     }
 
     .learning-overview{
-        grid-template-columns:1fr;
+        grid-template-columns:minmax(0,1fr);
+        width:100%;
     }
 
     .learning-summary{
-        grid-template-columns:1fr;
+        grid-template-columns:minmax(0,1fr);
+        width:100%;
+    }
+
+    .module-card,
+    .formula-card,
+    .content-card,
+    .summary-card,
+    .ai-card,
+    .overview-card,
+    .quiz-card{
+        width:100%;
+        max-width:100%;
+        min-width:0;
     }
 
     .section-header{
         display:block;
     }
 
+    .section-header > *{
+        max-width:100%;
+    }
+
     .filter-box{
         flex-direction:column;
+        width:100%;
     }
 
     .filter-box input,
@@ -226,6 +321,7 @@ table{
 
     .topic-navigation{
         flex-direction:column;
+        width:100%;
     }
 
     .topic-nav-btn,
@@ -237,6 +333,7 @@ table{
     .ai-actions{
         flex-direction:column;
         align-items:stretch;
+        width:100%;
     }
 
     .ai-generate{
@@ -244,12 +341,65 @@ table{
     }
 
     .footer-main{
-        grid-template-columns:1fr;
+        grid-template-columns:minmax(0,1fr);
+        width:100%;
     }
 
     .footer-bottom-inner{
         flex-direction:column;
         text-align:center;
+    }
+
+    /* Prevent text/content from escaping cards */
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    li,
+    span,
+    a{
+        max-width:100%;
+        overflow-wrap:anywhere;
+        word-break:normal;
+    }
+
+    /* Long formulas / code */
+
+    .code-block,
+    .formula-box,
+    .formula-code,
+    .sql-box{
+        width:100%;
+        max-width:100%;
+        min-width:0;
+        overflow-x:auto;
+    }
+
+    .code-block pre,
+    .formula-box pre,
+    pre{
+        max-width:none;
+        white-space:pre;
+        overflow-x:auto;
+    }
+
+    /* Tables */
+
+    .table-container,
+    .table-wrapper,
+    .data-table-wrapper{
+        width:100%;
+        max-width:100%;
+        overflow-x:auto;
+        -webkit-overflow-scrolling:touch;
+    }
+
+    table{
+        min-width:600px;
     }
 }
 
@@ -264,10 +414,19 @@ table{
         padding:10px 14px;
     }
 
+    .learning-brand{
+        max-width:calc(100% - 100px);
+    }
+
     .learning-brand-icon{
         width:38px;
         height:38px;
         font-size:18px;
+        flex-shrink:0;
+    }
+
+    .learning-brand-text{
+        min-width:0;
     }
 
     .learning-brand-text strong{
@@ -277,20 +436,24 @@ table{
     .header-action{
         width:36px;
         height:36px;
+        flex-shrink:0;
     }
 
     .learning-user-avatar{
         width:36px;
         height:36px;
+        flex-shrink:0;
     }
 
     .page-title h1,
     .ai-header h1{
         font-size:25px;
+        line-height:1.2;
     }
 
     .topic-header h1{
         font-size:25px;
+        line-height:1.2;
     }
 
     .module-card,
@@ -314,7 +477,10 @@ table{
     }
 
     .code-block{
+        width:100%;
+        max-width:100%;
         padding:16px;
+        overflow-x:auto;
     }
 
     .code-block pre{
@@ -349,6 +515,28 @@ table{
 
     .footer-bottom-inner{
         padding:16px;
+    }
+
+    /* Lesson/content protection */
+
+    .lesson-content,
+    .lesson-container,
+    .lesson-main,
+    .lesson-card,
+    .lesson-body{
+        width:100%;
+        max-width:100%;
+        min-width:0;
+    }
+
+    .lesson-content img,
+    .lesson-body img{
+        display:block;
+        width:auto;
+        max-width:100%;
+        height:auto;
+        margin-left:auto;
+        margin-right:auto;
     }
 }
 
@@ -402,6 +590,17 @@ table{
 
     .ai-hint{
         font-size:10px;
+    }
+
+    .learning-container,
+    .learning-content{
+        padding-left:12px;
+        padding-right:12px;
+    }
+
+    .learning-layout{
+        padding-left:12px;
+        padding-right:12px;
     }
 }
 

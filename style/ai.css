@@ -1,8 +1,7 @@
-```css
 /* =========================================================
    EXCEL AI ACADEMY
    AI ASSISTANT + RESULT UI
-   CLEAN CONSOLIDATED CSS
+   RESPONSIVE CONSOLIDATED CSS
    ========================================================= */
 
 
@@ -10,12 +9,19 @@
    AI SECTION
    ========================================================= */
 
-.ai-section {
-    width: 100%;
-    max-width: 100%;
-    margin: 0 0 35px;
-    padding: 0;
-    box-sizing: border-box;
+.ai-section{
+
+    width:100%;
+    max-width:100%;
+    min-width:0;
+
+    margin:0 0 35px;
+    padding:0;
+
+    box-sizing:border-box;
+
+    overflow:hidden;
+
 }
 
 
@@ -23,30 +29,50 @@
    AI SECTION HEADER
    ========================================================= */
 
-.ai-section .section-header {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
+.ai-section .section-header{
 
-    margin: 0 0 20px;
-    padding: 0;
-    box-sizing: border-box;
+    width:100%;
+    max-width:100%;
+    min-width:0;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    gap:20px;
+
+    margin:0 0 20px;
+    padding:0;
+
+    box-sizing:border-box;
+
 }
 
-.ai-section .section-header h2 {
-    margin: 0;
+.ai-section .section-header h2{
 
-    font-size: 1.8rem;
-    font-weight: 800;
+    margin:0;
 
-    color: #0f172a;
+    min-width:0;
+
+    font-size:1.8rem;
+    font-weight:800;
+
+    color:#0f172a;
+
+    overflow-wrap:anywhere;
+
 }
 
-.ai-section .section-header span {
-    color: #64748b;
-    font-size: 0.95rem;
+.ai-section .section-header span{
+
+    min-width:0;
+
+    color:#64748b;
+
+    font-size:.95rem;
+
+    overflow-wrap:anywhere;
+
 }
 
 
@@ -54,21 +80,27 @@
    AI CARD
    ========================================================= */
 
-.ai-card {
-    width: 100%;
-    max-width: 100%;
+.ai-card{
 
-    margin: 0;
-    padding: 26px;
+    width:100%;
+    max-width:100%;
+    min-width:0;
 
-    box-sizing: border-box;
+    margin:0;
+    padding:26px;
 
-    background: #ffffff;
-    border: 1px solid #e2e8f0;
-    border-radius: 20px;
+    box-sizing:border-box;
+
+    background:#fff;
+
+    border:1px solid #e2e8f0;
+    border-radius:20px;
 
     box-shadow:
-        0 10px 30px rgba(15, 23, 42, 0.07);
+        0 10px 30px rgba(15,23,42,.07);
+
+    overflow:hidden;
+
 }
 
 
@@ -76,18 +108,22 @@
    AI INPUT AREA
    ========================================================= */
 
-.ai-card .input-area {
-    width: 100%;
+.ai-card .input-area{
 
-    display: flex;
-    align-items: flex-end;
+    width:100%;
+    max-width:100%;
+    min-width:0;
 
-    gap: 14px;
+    display:flex;
+    align-items:flex-end;
 
-    margin: 0;
-    padding: 0;
+    gap:14px;
 
-    box-sizing: border-box;
+    margin:0;
+    padding:0;
+
+    box-sizing:border-box;
+
 }
 
 
@@ -95,45 +131,53 @@
    AI TEXTAREA
    ========================================================= */
 
-.ai-card textarea#prompt {
-    flex: 1;
+.ai-card textarea#prompt{
 
-    width: 100%;
-    min-width: 0;
-    min-height: 105px;
+    flex:1;
 
-    padding: 15px 16px;
+    width:100%;
+    min-width:0;
+    max-width:100%;
 
-    resize: vertical;
+    min-height:105px;
 
-    box-sizing: border-box;
+    padding:15px 16px;
 
-    border: 1px solid #cbd5e1;
-    border-radius: 14px;
+    resize:vertical;
 
-    background: #ffffff;
-    color: #0f172a;
+    box-sizing:border-box;
 
-    font-family: inherit;
-    font-size: 0.95rem;
-    line-height: 1.6;
+    border:1px solid #cbd5e1;
+    border-radius:14px;
 
-    outline: none;
+    background:#fff;
+    color:#0f172a;
+
+    font-family:inherit;
+    font-size:.95rem;
+    line-height:1.6;
+
+    outline:none;
 
     transition:
-        border-color 0.2s ease,
-        box-shadow 0.2s ease;
+        border-color .2s ease,
+        box-shadow .2s ease;
+
 }
 
-.ai-card textarea#prompt::placeholder {
-    color: #94a3b8;
+.ai-card textarea#prompt::placeholder{
+
+    color:#94a3b8;
+
 }
 
-.ai-card textarea#prompt:focus {
-    border-color: #21804b;
+.ai-card textarea#prompt:focus{
+
+    border-color:#21804b;
 
     box-shadow:
-        0 0 0 4px rgba(33, 128, 75, 0.10);
+        0 0 0 4px rgba(33,128,75,.10);
+
 }
 
 
@@ -141,49 +185,55 @@
    GENERATE BUTTON
    ========================================================= */
 
-.ai-card button#generateBtn {
-    flex-shrink: 0;
+.ai-card button#generateBtn{
 
-    min-height: 56px;
+    flex-shrink:0;
 
-    padding: 0 22px;
+    min-height:56px;
 
-    border: 0;
-    border-radius: 13px;
+    padding:0 22px;
 
-    background: #21804b;
-    color: #ffffff;
+    border:0;
+    border-radius:13px;
 
-    font-size: 0.95rem;
-    font-weight: 700;
+    background:#21804b;
+    color:#fff;
 
-    cursor: pointer;
+    font-size:.95rem;
+    font-weight:700;
 
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    cursor:pointer;
 
-    gap: 9px;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
 
-    white-space: nowrap;
+    gap:9px;
+
+    white-space:nowrap;
 
     transition:
-        background 0.2s ease,
-        transform 0.2s ease,
-        box-shadow 0.2s ease;
+        background .2s ease,
+        transform .2s ease,
+        box-shadow .2s ease;
+
 }
 
-.ai-card button#generateBtn:hover {
-    background: #17683c;
+.ai-card button#generateBtn:hover{
 
-    transform: translateY(-1px);
+    background:#17683c;
+
+    transform:translateY(-1px);
 
     box-shadow:
-        0 8px 18px rgba(33, 128, 75, 0.20);
+        0 8px 18px rgba(33,128,75,.20);
+
 }
 
-.ai-card button#generateBtn:active {
-    transform: translateY(0);
+.ai-card button#generateBtn:active{
+
+    transform:translateY(0);
+
 }
 
 
@@ -191,38 +241,53 @@
    AI HINTS
    ========================================================= */
 
-.ai-hints {
-    display: flex;
-    flex-wrap: wrap;
+.ai-hints{
 
-    gap: 8px;
+    display:flex;
 
-    margin-top: 14px;
+    flex-wrap:wrap;
+
+    gap:8px;
+
+    margin-top:14px;
+
+    max-width:100%;
+
 }
 
-.ai-hint {
-    padding: 7px 11px;
+.ai-hint{
 
-    border: 1px solid #e5e7eb;
-    border-radius: 999px;
+    max-width:100%;
 
-    background: #ffffff;
-    color: #64748b;
+    padding:7px 11px;
 
-    font-size: 11px;
+    border:1px solid #e5e7eb;
+    border-radius:999px;
 
-    cursor: pointer;
+    background:#fff;
+    color:#64748b;
+
+    font-size:11px;
+
+    cursor:pointer;
+
+    overflow-wrap:anywhere;
 
     transition:
-        background 0.2s ease,
-        border-color 0.2s ease,
-        color 0.2s ease;
+        background .2s ease,
+        border-color .2s ease,
+        color .2s ease;
+
 }
 
-.ai-hint:hover {
-    background: #f0fdf4;
-    border-color: #bbf7d0;
-    color: #166534;
+.ai-hint:hover{
+
+    background:#f0fdf4;
+
+    border-color:#bbf7d0;
+
+    color:#166534;
+
 }
 
 
@@ -230,20 +295,25 @@
    SEARCH RESULTS
    ========================================================= */
 
-.ai-card .search-results {
-    width: 100%;
-    min-height: 150px;
+.ai-card .search-results{
 
-    margin-top: 20px;
+    width:100%;
+    max-width:100%;
+    min-width:0;
 
-    box-sizing: border-box;
+    min-height:150px;
 
-    border: 1px solid #e2e8f0;
-    border-radius: 17px;
+    margin-top:20px;
 
-    background: #f8fafc;
+    box-sizing:border-box;
 
-    overflow: hidden;
+    border:1px solid #e2e8f0;
+    border-radius:17px;
+
+    background:#f8fafc;
+
+    overflow:hidden;
+
 }
 
 
@@ -251,40 +321,54 @@
    SEARCH PLACEHOLDER
    ========================================================= */
 
-.search-placeholder {
-    width: 100%;
+.search-placeholder{
 
-    padding: 25px;
+    width:100%;
+    max-width:100%;
 
-    text-align: center;
+    padding:25px;
 
-    box-sizing: border-box;
+    text-align:center;
+
+    box-sizing:border-box;
+
 }
 
-.search-placeholder i {
-    display: block;
+.search-placeholder i{
 
-    margin-bottom: 10px;
+    display:block;
 
-    color: #21804b;
-    font-size: 2.8rem;
+    margin-bottom:10px;
+
+    color:#21804b;
+
+    font-size:2.8rem;
+
 }
 
-.search-placeholder h4 {
-    margin: 0 0 5px;
+.search-placeholder h4{
 
-    color: #0f172a;
+    margin:0 0 5px;
 
-    font-size: 1rem;
-    font-weight: 750;
+    color:#0f172a;
+
+    font-size:1rem;
+    font-weight:750;
+
+    overflow-wrap:anywhere;
+
 }
 
-.search-placeholder p {
-    margin: 0;
+.search-placeholder p{
 
-    color: #64748b;
+    margin:0;
 
-    font-size: 0.92rem;
+    color:#64748b;
+
+    font-size:.92rem;
+
+    overflow-wrap:anywhere;
+
 }
 
 
@@ -292,47 +376,67 @@
    AI RESULT
    ========================================================= */
 
-.ai-result {
-    width: 100%;
+.ai-result{
 
-    margin-top: 25px;
+    width:100%;
+    max-width:100%;
+    min-width:0;
 
-    display: none;
+    margin-top:25px;
+
+    display:none;
+
 }
 
-.ai-result.show {
-    display: block;
+.ai-result.show{
+
+    display:block;
+
 }
 
-.ai-result-card {
-    width: 100%;
+.ai-result-card{
 
-    margin-bottom: 18px;
-    padding: 24px;
+    width:100%;
+    max-width:100%;
+    min-width:0;
 
-    box-sizing: border-box;
+    margin-bottom:18px;
+    padding:24px;
 
-    background: #ffffff;
+    box-sizing:border-box;
 
-    border: 1px solid #e5e7eb;
-    border-radius: 18px;
+    background:#fff;
+
+    border:1px solid #e5e7eb;
+    border-radius:18px;
+
+    overflow:hidden;
+
 }
 
-.ai-result-card h3 {
-    margin: 0 0 12px;
+.ai-result-card h3{
 
-    font-size: 19px;
-    font-weight: 750;
+    margin:0 0 12px;
 
-    color: #111827;
+    font-size:19px;
+    font-weight:750;
+
+    color:#111827;
+
+    overflow-wrap:anywhere;
+
 }
 
-.ai-result-card p {
-    margin: 0;
+.ai-result-card p{
 
-    color: #4b5563;
+    margin:0;
 
-    line-height: 1.8;
+    color:#4b5563;
+
+    line-height:1.8;
+
+    overflow-wrap:anywhere;
+
 }
 
 
@@ -340,31 +444,43 @@
    AI FORMULA
    ========================================================= */
 
-.ai-formula {
-    position: relative;
+.ai-formula{
 
-    width: 100%;
+    position:relative;
 
-    padding: 20px;
+    width:100%;
+    max-width:100%;
+    min-width:0;
 
-    box-sizing: border-box;
+    padding:20px;
 
-    background: #111827;
-    color: #f9fafb;
+    box-sizing:border-box;
 
-    border-radius: 14px;
+    background:#111827;
+    color:#f9fafb;
 
-    overflow-x: auto;
+    border-radius:14px;
+
+    overflow-x:auto;
+    overflow-y:hidden;
+
 }
 
-.ai-formula code {
-    font-family: "Courier New", monospace;
+.ai-formula code{
 
-    font-size: 14px;
-    line-height: 1.7;
+    display:block;
 
-    white-space: pre-wrap;
-    word-break: break-word;
+    min-width:0;
+
+    font-family:"Courier New",monospace;
+
+    font-size:14px;
+    line-height:1.7;
+
+    white-space:pre-wrap;
+
+    word-break:break-word;
+
 }
 
 
@@ -372,27 +488,33 @@
    AI COPY
    ========================================================= */
 
-.ai-copy {
-    position: absolute;
+.ai-copy{
 
-    top: 10px;
-    right: 10px;
+    position:absolute;
 
-    padding: 7px 11px;
+    top:10px;
+    right:10px;
 
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    border-radius: 8px;
+    padding:7px 11px;
 
-    background: rgba(255, 255, 255, 0.08);
-    color: #ffffff;
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:8px;
 
-    font-size: 11px;
+    background:rgba(255,255,255,.08);
+    color:#fff;
 
-    cursor: pointer;
+    font-size:11px;
+
+    cursor:pointer;
+
+    z-index:2;
+
 }
 
-.ai-copy:hover {
-    background: rgba(255, 255, 255, 0.16);
+.ai-copy:hover{
+
+    background:rgba(255,255,255,.16);
+
 }
 
 
@@ -400,17 +522,24 @@
    AI EXPLANATION
    ========================================================= */
 
-.ai-explanation {
-    padding: 18px;
+.ai-explanation{
 
-    background: #f0fdf4;
+    padding:18px;
 
-    border-left: 4px solid #217346;
-    border-radius: 12px;
+    background:#f0fdf4;
+
+    border-left:4px solid #217346;
+
+    border-radius:12px;
+
+    overflow-wrap:anywhere;
+
 }
 
-.ai-explanation strong {
-    color: #166534;
+.ai-explanation strong{
+
+    color:#166534;
+
 }
 
 
@@ -418,24 +547,32 @@
    AI ERROR
    ========================================================= */
 
-.ai-error {
-    display: none;
+.ai-error{
 
-    padding: 15px 18px;
-    margin-top: 15px;
+    display:none;
 
-    border-radius: 12px;
+    padding:15px 18px;
 
-    background: #fef2f2;
-    border: 1px solid #fecaca;
+    margin-top:15px;
 
-    color: #b91c1c;
+    border-radius:12px;
 
-    font-size: 13px;
+    background:#fef2f2;
+
+    border:1px solid #fecaca;
+
+    color:#b91c1c;
+
+    font-size:13px;
+
+    overflow-wrap:anywhere;
+
 }
 
-.ai-error.show {
-    display: block;
+.ai-error.show{
+
+    display:block;
+
 }
 
 
@@ -443,124 +580,149 @@
    AI LOADING
    ========================================================= */
 
-.ai-loading {
-    display: none;
+.ai-loading{
 
-    align-items: center;
-    justify-content: center;
+    display:none;
 
-    gap: 10px;
+    align-items:center;
+    justify-content:center;
 
-    padding: 25px;
+    gap:10px;
 
-    color: #6b7280;
+    padding:25px;
 
-    font-size: 13px;
+    color:#6b7280;
+
+    font-size:13px;
+
 }
 
-.ai-loading.show {
-    display: flex;
+.ai-loading.show{
+
+    display:flex;
+
 }
 
-.ai-loading-spinner {
-    width: 20px;
-    height: 20px;
+.ai-loading-spinner{
 
-    border: 3px solid #e5e7eb;
-    border-top-color: #217346;
+    width:20px;
+    min-width:20px;
 
-    border-radius: 50%;
+    height:20px;
 
-    animation: aiSpin 0.7s linear infinite;
+    border:3px solid #e5e7eb;
+    border-top-color:#217346;
+
+    border-radius:50%;
+
+    animation:aiSpin .7s linear infinite;
+
 }
 
-@keyframes aiSpin {
-    to {
-        transform: rotate(360deg);
+@keyframes aiSpin{
+
+    to{
+        transform:rotate(360deg);
     }
+
 }
 
 
 /* =========================================================
    RESULT CONTAINER
    ========================================================= */
-#resultContainer {
-    width: 100% !important;
-    max-width: none !important;
 
-    margin: 0 !important;
-    padding: 24px 0 !important;
+#resultContainer{
 
-    box-sizing: border-box;
+    width:100% !important;
+    max-width:none !important;
+    min-width:0 !important;
 
-    grid-column: 1 / -1 !important;
-    justify-self: stretch !important;
-    align-self: stretch !important;
+    margin:0 !important;
+    padding:24px 0 !important;
+
+    box-sizing:border-box;
+
+    grid-column:1 / -1 !important;
+
+    justify-self:stretch !important;
+    align-self:stretch !important;
+
+    overflow:hidden;
+
 }
-
 
 
 /* =========================================================
    RESULT GRID
-   4 COLUMNS
    ========================================================= */
 
-#resultContainer .result-grid {
-    width: 100% !important;
-    max-width: none !important;
+#resultContainer .result-grid{
+
+    width:100% !important;
+    max-width:none !important;
+    min-width:0 !important;
+
+    display:grid;
 
     grid-template-columns:
-        repeat(4, minmax(0, 1fr)) !important;
+        repeat(4,minmax(0,1fr)) !important;
 
-    gap: 18px !important;
+    gap:18px !important;
 
-    margin: 0 !important;
-    padding: 0 !important;
+    margin:0 !important;
+    padding:0 !important;
 
-    box-sizing: border-box;
+    box-sizing:border-box;
+
 }
-
 
 
 /* =========================================================
    RESULT CARD
    ========================================================= */
 
-#resultContainer .result-grid .card {
-    width: 100%;
-    min-width: 0;
-    min-height: 220px;
+#resultContainer .result-grid .card{
 
-    padding: 20px;
+    width:100%;
+    min-width:0;
+    max-width:100%;
 
-    box-sizing: border-box;
+    min-height:220px;
 
-    background: #ffffff;
+    padding:20px;
 
-    border: 1px solid #e5e7eb;
-    border-radius: 14px;
+    box-sizing:border-box;
+
+    background:#fff;
+
+    border:1px solid #e5e7eb;
+    border-radius:14px;
 
     box-shadow:
-        0 4px 14px rgba(15, 23, 42, 0.06);
+        0 4px 14px rgba(15,23,42,.06);
 
-    display: flex;
-    flex-direction: column;
+    display:flex;
+    flex-direction:column;
 
-    overflow: hidden;
+    overflow:hidden;
 
     transition:
-        transform 0.2s ease,
-        box-shadow 0.2s ease,
-        border-color 0.2s ease;
+        transform .2s ease,
+        box-shadow .2s ease,
+        border-color .2s ease;
+
 }
 
-#resultContainer .result-grid .card:hover {
-    transform: translateY(-2px);
+#resultContainer .result-grid .card:hover{
 
-    border-color: #cbd5e1;
+    transform:translateY(-2px);
+
+    border-color:#cbd5e1;
 
     box-shadow:
-        0 8px 22px rgba(15, 23, 42, 0.09);
+        0 8px 22px rgba(15,23,42,.09);
+
 }
 
 
@@ -568,38 +730,49 @@
    RESULT CARD TITLE
    ========================================================= */
 
-#resultContainer .card-title {
-    display: flex;
-    align-items: center;
+#resultContainer .card-title{
 
-    gap: 9px;
+    display:flex;
+    align-items:center;
 
-    margin: 0 0 15px;
+    gap:9px;
 
-    color: #1e293b;
+    margin:0 0 15px;
 
-    font-size: 15px;
-    font-weight: 700;
+    color:#1e293b;
 
-    line-height: 1.3;
+    font-size:15px;
+    font-weight:700;
+
+    line-height:1.3;
+
+    min-width:0;
+
+    overflow-wrap:anywhere;
+
 }
 
-#resultContainer .card-title i {
-    width: 32px;
-    height: 32px;
+#resultContainer .card-title i{
 
-    flex-shrink: 0;
+    width:32px;
+    min-width:32px;
 
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    height:32px;
 
-    border-radius: 8px;
+    flex-shrink:0;
 
-    background: #eff6ff;
-    color: #2563eb;
+    display:inline-flex;
 
-    font-size: 14px;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:8px;
+
+    background:#eff6ff;
+    color:#2563eb;
+
+    font-size:14px;
+
 }
 
 
@@ -608,33 +781,38 @@
    ========================================================= */
 
 #formulaBox,
-#alternativeFormula {
-    width: 100%;
-    min-height: 90px;
+#alternativeFormula{
 
-    margin: 0 0 15px;
-    padding: 14px;
+    width:100%;
+    min-width:0;
 
-    box-sizing: border-box;
+    min-height:90px;
 
-    border: 1px solid #e2e8f0;
-    border-radius: 9px;
+    margin:0 0 15px;
+    padding:14px;
 
-    background: #f8fafc;
-    color: #0f172a;
+    box-sizing:border-box;
+
+    border:1px solid #e2e8f0;
+    border-radius:9px;
+
+    background:#f8fafc;
+    color:#0f172a;
 
     font-family:
         "Consolas",
         "Courier New",
         monospace;
 
-    font-size: 13px;
-    line-height: 1.6;
+    font-size:13px;
+    line-height:1.6;
 
-    white-space: pre-wrap;
-    word-break: break-word;
+    white-space:pre-wrap;
 
-    overflow-x: auto;
+    word-break:break-word;
+
+    overflow-x:auto;
+
 }
 
 
@@ -642,40 +820,48 @@
    COPY FORMULA
    ========================================================= */
 
-#copyFormula {
-    width: 100%;
+#copyFormula{
 
-    margin-top: auto;
-    padding: 10px 14px;
+    width:100%;
 
-    border: 0;
-    border-radius: 8px;
+    margin-top:auto;
 
-    background: #2563eb;
-    color: #ffffff;
+    padding:10px 14px;
 
-    font-size: 13px;
-    font-weight: 600;
+    border:0;
+    border-radius:8px;
 
-    cursor: pointer;
+    background:#2563eb;
+    color:#fff;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    font-size:13px;
+    font-weight:600;
 
-    gap: 8px;
+    cursor:pointer;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    gap:8px;
 
     transition:
-        background 0.2s ease,
-        transform 0.2s ease;
+        background .2s ease,
+        transform .2s ease;
+
 }
 
-#copyFormula:hover {
-    background: #1d4ed8;
+#copyFormula:hover{
+
+    background:#1d4ed8;
+
 }
 
-#copyFormula:active {
-    transform: scale(0.98);
+#copyFormula:active{
+
+    transform:scale(.98);
+
 }
 
 
@@ -684,24 +870,26 @@
    ========================================================= */
 
 #explanation,
-#businessCase {
-    margin: 0;
+#businessCase,
+#breakdown{
 
-    color: #475569;
+    color:#475569;
 
-    font-size: 14px;
-    line-height: 1.7;
+    font-size:14px;
 
-    word-break: break-word;
+    line-height:1.7;
+
+    word-break:break-word;
+
+    overflow-wrap:anywhere;
+
 }
 
-#breakdown {
-    color: #475569;
+#explanation,
+#businessCase{
 
-    font-size: 14px;
-    line-height: 1.7;
+    margin:0;
 
-    word-break: break-word;
 }
 
 
@@ -709,17 +897,22 @@
    EXPECTED OUTPUT
    ========================================================= */
 
-#outputValue {
-    margin: auto 0;
+#outputValue{
 
-    text-align: center;
+    margin:auto 0;
 
-    font-size: 42px;
-    font-weight: 800;
+    text-align:center;
 
-    line-height: 1;
+    font-size:42px;
 
-    color: #16a34a;
+    font-weight:800;
+
+    line-height:1;
+
+    color:#16a34a;
+
+    overflow-wrap:anywhere;
+
 }
 
 
@@ -728,26 +921,36 @@
    ========================================================= */
 
 #tipsList,
-#errorList {
-    margin: 0;
-    padding-left: 20px;
+#errorList{
 
-    color: #475569;
+    margin:0;
 
-    font-size: 13px;
-    line-height: 1.7;
+    padding-left:20px;
+
+    color:#475569;
+
+    font-size:13px;
+
+    line-height:1.7;
+
 }
 
 #tipsList li,
-#errorList li {
-    margin-bottom: 7px;
+#errorList li{
 
-    word-break: break-word;
+    margin-bottom:7px;
+
+    word-break:break-word;
+
+    overflow-wrap:anywhere;
+
 }
 
 #tipsList li:last-child,
-#errorList li:last-child {
-    margin-bottom: 0;
+#errorList li:last-child{
+
+    margin-bottom:0;
+
 }
 
 
@@ -755,26 +958,38 @@
    FULL WIDTH DUMMY DATA CARD
    ========================================================= */
 
-#resultContainer .full-card {
-    grid-column: 1 / -1 !important;
-    width: 100% !important;
+#resultContainer .full-card{
+
+    grid-column:1 / -1 !important;
+
+    width:100% !important;
+
+    min-width:0;
+
 }
+
 
 /* =========================================================
    TABLE CONTAINER
    ========================================================= */
 
-#tableContainer {
-    width: 100%;
+#tableContainer{
 
-    margin-top: 4px;
+    width:100%;
+    max-width:100%;
+    min-width:0;
 
-    box-sizing: border-box;
+    margin-top:4px;
 
-    overflow-x: auto;
+    box-sizing:border-box;
 
-    border: 1px solid #e2e8f0;
-    border-radius: 10px;
+    overflow-x:auto;
+    overflow-y:hidden;
+
+    border:1px solid #e2e8f0;
+
+    border-radius:10px;
+
 }
 
 
@@ -782,47 +997,58 @@
    DUMMY DATA TABLE
    ========================================================= */
 
-#tableContainer table {
-    width: 100%;
-    min-width: 600px;
+#tableContainer table{
 
-    border-collapse: collapse;
+    width:100%;
 
-    font-size: 13px;
+    min-width:600px;
+
+    border-collapse:collapse;
+
+    font-size:13px;
+
 }
 
-#tableContainer th {
-    padding: 11px 13px;
+#tableContainer th{
 
-    text-align: left;
+    padding:11px 13px;
 
-    background: #f1f5f9;
+    text-align:left;
 
-    color: #334155;
+    background:#f1f5f9;
 
-    font-weight: 700;
+    color:#334155;
 
-    border-bottom: 1px solid #cbd5e1;
+    font-weight:700;
 
-    white-space: nowrap;
+    border-bottom:1px solid #cbd5e1;
+
+    white-space:nowrap;
+
 }
 
-#tableContainer td {
-    padding: 10px 13px;
+#tableContainer td{
 
-    color: #475569;
+    padding:10px 13px;
 
-    border-bottom: 1px solid #e2e8f0;
+    color:#475569;
 
-    white-space: nowrap;
+    border-bottom:1px solid #e2e8f0;
+
+    white-space:nowrap;
+
 }
 
-#tableContainer tr:last-child td {
-    border-bottom: 0;
+#tableContainer tr:last-child td{
+
+    border-bottom:0;
+
 }
 
-#tableContainer tr:hover td {
-    background: #f8fafc;
+#tableContainer tr:hover td{
+
+    background:#f8fafc;
+
 }
 
 
@@ -830,63 +1056,81 @@
    RESULT ACTION BUTTONS
    ========================================================= */
 
-#resultContainer .action-buttons {
-    width: 100%;
+#resultContainer .action-buttons{
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width:100%;
 
-    gap: 12px;
+    display:flex;
 
-    margin-top: 22px;
+    justify-content:center;
+    align-items:center;
 
-    box-sizing: border-box;
+    gap:12px;
+
+    margin-top:22px;
+
+    box-sizing:border-box;
+
 }
 
-#resultContainer .action-buttons button {
-    min-width: 190px;
+#resultContainer .action-buttons button{
 
-    padding: 12px 18px;
+    min-width:190px;
 
-    border: 0;
-    border-radius: 9px;
+    max-width:100%;
 
-    font-size: 13px;
-    font-weight: 700;
+    padding:12px 18px;
 
-    cursor: pointer;
+    border:0;
 
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    border-radius:9px;
 
-    gap: 8px;
+    font-size:13px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    display:inline-flex;
+
+    align-items:center;
+    justify-content:center;
+
+    gap:8px;
 
     transition:
-        transform 0.2s ease,
-        box-shadow 0.2s ease;
+        transform .2s ease,
+        box-shadow .2s ease;
+
 }
 
-#downloadExcel {
-    background: #16a34a;
-    color: #ffffff;
+#downloadExcel{
+
+    background:#16a34a;
+    color:#fff;
+
 }
 
-#copyAll {
-    background: #2563eb;
-    color: #ffffff;
+#copyAll{
+
+    background:#2563eb;
+    color:#fff;
+
 }
 
-#resultContainer .action-buttons button:hover {
-    transform: translateY(-1px);
+#resultContainer .action-buttons button:hover{
+
+    transform:translateY(-1px);
 
     box-shadow:
-        0 5px 14px rgba(15, 23, 42, 0.12);
+        0 5px 14px rgba(15,23,42,.12);
+
 }
 
-#resultContainer .action-buttons button:active {
-    transform: scale(0.98);
+#resultContainer .action-buttons button:active{
+
+    transform:scale(.98);
+
 }
 
 
@@ -894,11 +1138,13 @@
    TABLET
    ========================================================= */
 
-@media (max-width: 1100px) {
+@media (max-width:1100px){
 
-    #resultContainer .result-grid {
+    #resultContainer .result-grid{
+
         grid-template-columns:
-            repeat(2, minmax(0, 1fr));
+            repeat(2,minmax(0,1fr));
+
     }
 
 }
@@ -908,69 +1154,130 @@
    MOBILE
    ========================================================= */
 
-@media (max-width: 700px) {
+@media (max-width:700px){
 
-    .ai-section .section-header {
-        flex-direction: column;
-        align-items: flex-start;
+    .ai-section .section-header{
 
-        gap: 6px;
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:6px;
+
     }
 
-    .ai-section .section-header h2 {
-        font-size: 1.45rem;
+    .ai-section .section-header h2{
+
+        font-size:1.45rem;
+
     }
 
-    .ai-card {
-        padding: 18px;
+    .ai-section .section-header span{
 
-        border-radius: 17px;
+        font-size:.88rem;
+
     }
 
-    .ai-card .input-area {
-        flex-direction: column;
-        align-items: stretch;
+    .ai-card{
+
+        padding:18px;
+
+        border-radius:17px;
+
     }
 
-    .ai-card textarea#prompt {
-        width: 100%;
-        min-height: 120px;
+    .ai-card .input-area{
+
+        flex-direction:column;
+
+        align-items:stretch;
+
     }
 
-    .ai-card button#generateBtn {
-        width: 100%;
+    .ai-card textarea#prompt{
+
+        width:100%;
+
+        min-height:120px;
+
     }
 
+    .ai-card button#generateBtn{
 
-    #resultContainer {
-        padding: 18px 0;
+        width:100%;
+
+        min-height:52px;
+
     }
 
-    #resultContainer .result-grid {
-        grid-template-columns: 1fr;
+    .ai-hints{
 
-        gap: 14px;
+        gap:7px;
+
     }
 
-    #resultContainer .result-grid .card {
-        min-height: auto;
+    .ai-hint{
 
-        padding: 17px;
+        font-size:11px;
+
+        max-width:100%;
+
     }
 
-    #resultContainer .full-card {
-        grid-column: auto;
+    .ai-result-card{
+
+        padding:18px;
+
     }
 
+    #resultContainer{
 
-    #resultContainer .action-buttons {
-        flex-direction: column;
-        align-items: stretch;
+        padding:18px 0 !important;
+
     }
 
-    #resultContainer .action-buttons button {
-        width: 100%;
-        min-width: 0;
+    #resultContainer .result-grid{
+
+        grid-template-columns:1fr;
+
+        gap:14px;
+
+    }
+
+    #resultContainer .result-grid .card{
+
+        min-height:auto;
+
+        padding:17px;
+
+    }
+
+    #resultContainer .full-card{
+
+        grid-column:auto !important;
+
+    }
+
+    #resultContainer .action-buttons{
+
+        flex-direction:column;
+
+        align-items:stretch;
+
+    }
+
+    #resultContainer .action-buttons button{
+
+        width:100%;
+
+        min-width:0;
+
+    }
+
+    #outputValue{
+
+        font-size:34px;
+
     }
 
 }
@@ -980,31 +1287,106 @@
    SMALL MOBILE
    ========================================================= */
 
-@media (max-width: 400px) {
+@media (max-width:400px){
 
-    .ai-section .section-header h2 {
-        font-size: 1.3rem;
+    .ai-section{
+
+        margin-bottom:25px;
+
     }
 
-    .ai-section .section-header span {
-        font-size: 0.85rem;
+    .ai-section .section-header h2{
+
+        font-size:1.3rem;
+
     }
 
-    #resultContainer .result-grid .card {
-        padding: 15px;
+    .ai-section .section-header span{
 
-        border-radius: 11px;
+        font-size:.85rem;
+
     }
 
-    #resultContainer .card-title {
-        font-size: 14px;
+    .ai-card{
+
+        padding:14px;
+
+        border-radius:15px;
+
+    }
+
+    .ai-result-card{
+
+        padding:15px;
+
+    }
+
+    #resultContainer .result-grid .card{
+
+        padding:15px;
+
+        border-radius:11px;
+
+    }
+
+    #resultContainer .card-title{
+
+        font-size:14px;
+
     }
 
     #formulaBox,
-    #alternativeFormula {
-        font-size: 12px;
-        padding: 11px;
+    #alternativeFormula{
+
+        font-size:12px;
+
+        padding:11px;
+
+    }
+
+    #outputValue{
+
+        font-size:30px;
+
     }
 
 }
-```
+
+
+/* =========================================================
+   TOUCH DEVICES
+   ========================================================= */
+
+@media (hover:none){
+
+    .ai-card button#generateBtn:hover,
+    .ai-hint:hover,
+    .ai-copy:hover,
+    #copyFormula:hover,
+    #resultContainer .result-grid .card:hover,
+    #resultContainer .action-buttons button:hover{
+
+        transform:none;
+
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion:reduce){
+
+    *,
+    *::before,
+    *::after{
+
+        animation:none !important;
+
+        transition:none !important;
+
+    }
+
+}

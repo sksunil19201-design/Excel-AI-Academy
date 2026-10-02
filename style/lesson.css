@@ -2097,3 +2097,480 @@ PRACTICAL EXAMPLE IMAGE
     }
 
 }
+/*==================================================
+  STEP 1 — LESSON PAGE RESPONSIVE FOUNDATION
+  ADD ONLY — DELETE NOTHING
+==================================================*/
+
+@media (max-width:1024px){
+
+    .lesson-container{
+        width:100%;
+        max-width:100%;
+        padding-left:22px;
+        padding-right:22px;
+    }
+
+    .lesson-header{
+        padding:30px;
+    }
+
+    .lesson-card{
+        min-width:0;
+    }
+
+    .business-list{
+        grid-template-columns:1fr 1fr;
+    }
+
+}
+
+
+@media (max-width:768px){
+
+    /*==============================================
+      MAIN CONTAINER
+    ==============================================*/
+
+    .lesson-container{
+        width:100%;
+        max-width:100%;
+        padding:18px 14px 45px;
+        overflow-x:hidden;
+    }
+
+
+    /*==============================================
+      HEADER
+    ==============================================*/
+
+    .lesson-header{
+        width:100%;
+        padding:22px 18px;
+        margin-bottom:18px;
+        border-radius:14px;
+    }
+
+    .back-btn{
+        max-width:100%;
+        margin-bottom:16px;
+    }
+
+    .lesson-title{
+        min-width:0;
+    }
+
+    .lesson-title h1{
+        max-width:100%;
+        font-size:26px;
+        line-height:1.3;
+        overflow-wrap:anywhere;
+        word-break:break-word;
+    }
+
+
+    /*==============================================
+      META
+    ==============================================*/
+
+    .lesson-meta{
+        width:100%;
+        gap:7px;
+    }
+
+    .lesson-meta span{
+        max-width:100%;
+        box-sizing:border-box;
+        padding:7px 10px;
+        font-size:11px;
+        overflow-wrap:anywhere;
+    }
+
+
+    /*==============================================
+      PROGRESS
+    ==============================================*/
+
+    .lesson-progress{
+        width:100%;
+        padding:15px 16px;
+        border-radius:14px;
+    }
+
+    .lesson-progress .progress{
+        width:100%;
+    }
+
+
+    /*==============================================
+      LESSON CONTENT
+    ==============================================*/
+
+    #lessonContent{
+        width:100%;
+        max-width:100%;
+        gap:16px;
+    }
+
+    .lesson-card{
+        width:100%;
+        max-width:100%;
+        padding:20px 17px;
+        border-radius:14px;
+        min-width:0;
+    }
+
+
+    /*==============================================
+      CARD HEADER
+    ==============================================*/
+
+    .card-header{
+        width:100%;
+        min-width:0;
+        gap:9px;
+        margin-bottom:14px;
+    }
+
+    .lesson-card h2{
+        max-width:100%;
+        font-size:18px;
+        line-height:1.45;
+        overflow-wrap:anywhere;
+        word-break:break-word;
+    }
+
+
+    /*==============================================
+      TEXT
+    ==============================================*/
+
+    .card-body,
+    .lesson-card p,
+    .lesson-card li{
+        max-width:100%;
+        font-size:14px;
+        line-height:1.8;
+        overflow-wrap:anywhere;
+        word-break:break-word;
+    }
+
+    .lesson-card ul,
+    .lesson-card ol{
+        padding-left:21px;
+        max-width:100%;
+    }
+
+
+    /*==============================================
+      SPECIAL BOXES
+    ==============================================*/
+
+    .example-box,
+    .use-case,
+    .result-box,
+    .try-it-yourself,
+    .challenge-box{
+        width:100%;
+        max-width:100%;
+        box-sizing:border-box;
+        padding:16px;
+        overflow-wrap:anywhere;
+    }
+
+
+    /*==============================================
+      BUSINESS USE
+    ==============================================*/
+
+    .business-list{
+        grid-template-columns:1fr;
+        width:100%;
+    }
+
+    .business-item{
+        width:100%;
+        min-width:0;
+    }
+
+
+    /*==============================================
+      SYNTAX / CODE
+    ==============================================*/
+
+    .syntax-box{
+        width:100%;
+        max-width:100%;
+        padding:16px;
+        overflow-x:auto;
+        -webkit-overflow-scrolling:touch;
+    }
+
+    .syntax-box pre{
+        width:max-content;
+        min-width:100%;
+        max-width:none;
+    }
+
+    .syntax-box code{
+        font-size:12px;
+        white-space:pre;
+    }
+
+
+    /*==============================================
+      INLINE CODE / FORMULA
+    ==============================================*/
+
+    .lesson-card code{
+        overflow-wrap:anywhere;
+        word-break:break-word;
+    }
+
+
+    /*==============================================
+      PRACTICAL TABLE
+    ==============================================*/
+
+    .practice-table-wrapper,
+    .excel-table-wrapper{
+        width:100%;
+        max-width:100%;
+        overflow-x:auto;
+        -webkit-overflow-scrolling:touch;
+    }
+
+    .practice-table,
+    .excel-table{
+        max-width:none;
+    }
+
+
+    /*==============================================
+      QUIZ
+    ==============================================*/
+
+    .quiz-question{
+        width:100%;
+        max-width:100%;
+        padding:16px;
+        box-sizing:border-box;
+    }
+
+    .quiz-question-text,
+    .quiz-question h3{
+        max-width:100%;
+        font-size:15px;
+        line-height:1.6;
+        overflow-wrap:anywhere;
+    }
+
+    .quiz-options{
+        width:100%;
+    }
+
+    .quiz-option{
+        width:100%;
+        max-width:100%;
+        box-sizing:border-box;
+        padding:13px 14px;
+        min-height:44px;
+        overflow-wrap:anywhere;
+        word-break:break-word;
+    }
+
+    .quiz-explanation,
+    .quiz-wrong,
+    .quiz-correct{
+        width:100%;
+        max-width:100%;
+        box-sizing:border-box;
+        overflow-wrap:anywhere;
+    }
+
+
+    /*==============================================
+      KEY TAKEAWAYS
+    ==============================================*/
+
+    .takeaway-item{
+        width:100%;
+        min-width:0;
+        overflow-wrap:anywhere;
+    }
+
+
+    /*==============================================
+      LESSON NAVIGATION
+    ==============================================*/
+
+    .lesson-navigation{
+        width:100%;
+        gap:9px;
+        flex-wrap:wrap;
+    }
+
+    .lesson-navigation button{
+        min-width:0;
+        max-width:100%;
+        box-sizing:border-box;
+    }
+
+    .complete-lesson-btn{
+        max-width:100%;
+        box-sizing:border-box;
+    }
+
+
+    /*==============================================
+      IMAGES
+    ==============================================*/
+
+    .lesson-example-image{
+        width:100%;
+        max-width:100%;
+        overflow:hidden;
+    }
+
+    .lesson-example-image img{
+        width:100%;
+        max-width:100%;
+        height:auto;
+    }
+
+}
+
+
+@media (max-width:480px){
+
+    /*==============================================
+      EXTRA SMALL SPACING
+    ==============================================*/
+
+    .lesson-container{
+        padding-left:11px;
+        padding-right:11px;
+    }
+
+    .lesson-header{
+        padding:19px 15px;
+        border-radius:12px;
+    }
+
+    .lesson-card{
+        padding:17px 14px;
+        border-radius:12px;
+    }
+
+
+    /*==============================================
+      HEADER
+    ==============================================*/
+
+    .lesson-title h1{
+        font-size:23px;
+    }
+
+    .lesson-meta{
+        flex-direction:column;
+        align-items:stretch;
+    }
+
+    .lesson-meta span{
+        width:100%;
+        justify-content:flex-start;
+    }
+
+
+    /*==============================================
+      CONTENT
+    ==============================================*/
+
+    .lesson-card h2{
+        font-size:17px;
+    }
+
+    .lesson-card p,
+    .lesson-card li,
+    .card-body{
+        font-size:13px;
+        line-height:1.75;
+    }
+
+
+    /*==============================================
+      BOXES
+    ==============================================*/
+
+    .example-box,
+    .use-case,
+    .result-box,
+    .try-it-yourself,
+    .challenge-box{
+        padding:14px;
+    }
+
+
+    /*==============================================
+      QUIZ
+    ==============================================*/
+
+    .quiz-question{
+        padding:14px;
+    }
+
+    .quiz-option{
+        padding:12px;
+        font-size:13px;
+    }
+
+
+    /*==============================================
+      NAVIGATION
+    ==============================================*/
+
+    .lesson-navigation{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+    }
+
+    .lesson-navigation button{
+        width:100%;
+    }
+
+    .complete-lesson-btn{
+        grid-column:1 / -1;
+        width:100%;
+    }
+
+}
+
+
+@media (max-width:360px){
+
+    .lesson-container{
+        padding-left:9px;
+        padding-right:9px;
+    }
+
+    .lesson-header{
+        padding:17px 13px;
+    }
+
+    .lesson-card{
+        padding:15px 12px;
+    }
+
+    .lesson-title h1{
+        font-size:21px;
+    }
+
+    .lesson-card h2{
+        font-size:16px;
+    }
+
+    .quiz-option{
+        font-size:12px;
+    }
+
+}

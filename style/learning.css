@@ -4431,3 +4431,1259 @@ footer a{
     box-shadow:
         0 6px 15px rgba(22, 163, 74, 0.20);
 }
+
+/*==================================================*
+* STEP 1 — MOBILE FOUNDATION UPGRADE
+* ADD ONLY — DELETE NOTHING
+*==================================================*/
+
+@media (max-width:768px){
+
+    /* MAIN WIDTH */
+    .learning-page,
+    .learning-container,
+    .learning-content,
+    .learning-layout,
+    .dashboard,
+    .dashboard-container,
+    .dashboard-content,
+    .main-content{
+        width:100%;
+        max-width:100%;
+        min-width:0;
+    }
+
+
+    /* HEADER */
+    .learning-header-inner{
+        width:100%;
+        padding:12px 14px;
+        gap:12px;
+    }
+
+    .learning-brand{
+        min-width:0;
+    }
+
+    .learning-brand-text{
+        min-width:0;
+    }
+
+    .learning-brand-text strong{
+        overflow:hidden;
+        text-overflow:ellipsis;
+        white-space:nowrap;
+    }
+
+
+    /* SEARCH */
+    .learning-search{
+        width:100%;
+        min-width:0;
+    }
+
+    .learning-search input{
+        width:100%;
+        max-width:100%;
+        box-sizing:border-box;
+    }
+
+
+    /* MAIN CONTAINERS */
+    .learning-container,
+    .learning-content,
+    .learning-layout,
+    .dashboard,
+    .dashboard-container,
+    .dashboard-content,
+    .main-content{
+        padding-left:14px;
+        padding-right:14px;
+    }
+
+
+    /* SECTION HEADERS */
+    .section-header{
+        width:100%;
+    }
+
+    .section-header h2,
+    .section-header p{
+        max-width:100%;
+    }
+
+
+    /* MODULE / FORMULA */
+    .module-card,
+    .formula-card,
+    .content-card,
+    .summary-card,
+    .overview-card,
+    .quiz-card,
+    .quiz-result,
+    .dashboard-card{
+        width:100%;
+        max-width:100%;
+        min-width:0;
+    }
+
+    .module-card p,
+    .formula-card p,
+    .content-card p{
+        overflow-wrap:anywhere;
+        word-break:break-word;
+    }
+
+
+    /* MODULE INFO */
+    .module-info{
+        flex-wrap:wrap;
+        gap:8px 15px;
+    }
+
+
+    /* BUTTONS */
+    .module-card button,
+    .formula-footer button,
+    .learning-btn,
+    .lesson-complete,
+    .bookmark-btn,
+    .module-start-btn{
+        max-width:100%;
+        box-sizing:border-box;
+    }
+
+
+    /* TOPIC HEADER */
+    .topic-header{
+        width:100%;
+        max-width:100%;
+    }
+
+    .topic-header h1{
+        overflow-wrap:anywhere;
+    }
+
+
+    /* META */
+    .topic-meta{
+        width:100%;
+    }
+
+    .topic-meta span{
+        max-width:100%;
+    }
+
+
+    /* CODE / FORMULA */
+    .code-block{
+        width:100%;
+        max-width:100%;
+        overflow-x:auto;
+        -webkit-overflow-scrolling:touch;
+    }
+
+    .code-block pre{
+        width:max-content;
+        min-width:100%;
+    }
+
+
+    /* DATA TABLE */
+    .data-table-wrapper{
+        width:100%;
+        max-width:100%;
+        overflow-x:auto;
+        -webkit-overflow-scrolling:touch;
+    }
+
+
+    /* FILTER */
+    .filter-box{
+        width:100%;
+    }
+
+    .filter-box input,
+    .filter-box select{
+        width:100%;
+        max-width:100%;
+        box-sizing:border-box;
+    }
+
+
+    /* QUIZ */
+    .quiz-question h3{
+        overflow-wrap:anywhere;
+    }
+
+    .quiz-option{
+        min-width:0;
+    }
+
+    .quiz-option span{
+        overflow-wrap:anywhere;
+    }
+
+
+    /* LEARNING PROGRESS */
+    .learning-progress-header,
+    .overall-progress-header{
+        flex-wrap:wrap;
+        gap:6px;
+    }
+
+
+    /* TOPIC NAVIGATION */
+    .topic-navigation{
+        width:100%;
+    }
+
+    .topic-nav-btn{
+        min-width:0;
+        max-width:100%;
+        box-sizing:border-box;
+    }
+
+
+    /* FOOTER */
+    .learning-footer-inner{
+        width:100%;
+    }
+
+
+    /* TOAST */
+    .learning-toast{
+        max-width:calc(100vw - 32px);
+        box-sizing:border-box;
+    }
+
+}
+
+
+@media (max-width:480px){
+
+    /* SMALL SCREEN SPACING */
+    .learning-container,
+    .learning-content,
+    .learning-layout,
+    .dashboard,
+    .dashboard-container,
+    .dashboard-content,
+    .main-content{
+        padding-left:12px;
+        padding-right:12px;
+    }
+
+
+    /* CARDS */
+    .module-card,
+    .formula-card,
+    .content-card,
+    .summary-card,
+    .overview-card,
+    .quiz-card,
+    .quiz-result,
+    .dashboard-card{
+        border-radius:16px;
+    }
+
+
+    /* HEADINGS */
+    .topic-header h1{
+        font-size:23px;
+        line-height:1.3;
+    }
+
+    .page-title h1{
+        font-size:23px;
+        line-height:1.3;
+    }
+
+
+    /* ACTIONS */
+    .lesson-actions{
+        width:100%;
+    }
+
+    .lesson-actions button,
+    .lesson-actions a{
+        width:100%;
+    }
+
+
+    /* QUICK ACTIONS */
+    .quick-actions{
+        width:100%;
+    }
+
+    .quick-action{
+        max-width:100%;
+    }
+
+
+    /* HEADER ACTIONS */
+    .learning-header-actions{
+        gap:5px;
+    }
+
+
+    /* SEARCH RESULTS */
+    .learning-search-results{
+        left:0;
+        right:0;
+        max-width:100%;
+    }
+
+}
+
+
+/*==================================================*
+* EXTRA SMALL MOBILE
+*==================================================*/
+
+@media (max-width:360px){
+
+    .learning-header-inner{
+        padding-left:10px;
+        padding-right:10px;
+    }
+
+    .learning-brand-text strong{
+        font-size:14px;
+    }
+
+    .header-action{
+        width:34px;
+        height:34px;
+    }
+
+    .learning-search input{
+        height:42px;
+        font-size:13px;
+    }
+
+}
+
+/*==================================================*
+* STEP 2 — LESSON CONTENT MOBILE UPGRADE
+* ADD ONLY — DELETE NOTHING
+*==================================================*/
+
+@media (max-width:768px){
+
+    /*==============================================
+      CONTENT BOXES
+    ==============================================*/
+
+    .definition-box,
+    .example-box,
+    .business-case,
+    .tips-box,
+    .errors-box,
+    .output-table{
+        width:100%;
+        max-width:100%;
+        box-sizing:border-box;
+        padding:17px;
+        border-radius:14px;
+    }
+
+
+    /*==============================================
+      CONTENT TEXT
+    ==============================================*/
+
+    .content-card ul,
+    .content-card ol{
+        padding-left:20px;
+    }
+
+    .content-card li{
+        overflow-wrap:anywhere;
+    }
+
+    .definition-box p,
+    .example-box p,
+    .business-case p,
+    .tips-box li,
+    .errors-box li,
+    .interview-answer{
+        overflow-wrap:anywhere;
+        word-break:break-word;
+    }
+
+
+    /*==============================================
+      CODE BLOCK
+    ==============================================*/
+
+    .code-block{
+        margin-left:0;
+        margin-right:0;
+        padding:16px;
+        max-width:100%;
+    }
+
+    .code-block pre{
+        font-size:12px;
+        line-height:1.65;
+        overflow-x:visible;
+    }
+
+    .code-copy{
+        top:9px;
+        right:9px;
+        padding:6px 9px;
+        font-size:11px;
+    }
+
+
+    /*==============================================
+      DATA TABLE
+    ==============================================*/
+
+    .data-table-wrapper{
+        margin-left:0;
+        margin-right:0;
+        border-radius:12px;
+    }
+
+    .data-table{
+        min-width:560px;
+    }
+
+    .data-table th,
+    .data-table td{
+        padding:11px 12px;
+        font-size:12px;
+        white-space:nowrap;
+    }
+
+
+    /*==============================================
+      TOPIC NAVIGATION
+    ==============================================*/
+
+    .topic-navigation{
+        width:100%;
+        gap:10px;
+    }
+
+    .topic-nav-btn,
+    .topic-nav-btn.next{
+        width:100%;
+        min-height:58px;
+        padding:12px 14px;
+    }
+
+
+    /*==============================================
+      LEARNING SIDEBAR
+    ==============================================*/
+
+    .learning-sidebar{
+        width:100%;
+        max-width:100%;
+        box-sizing:border-box;
+    }
+
+    .sidebar-item{
+        min-height:42px;
+    }
+
+
+    /*==============================================
+      LESSON ACTIONS
+    ==============================================*/
+
+    .lesson-actions{
+        width:100%;
+        gap:9px;
+    }
+
+    .lesson-complete,
+    .bookmark-btn{
+        min-height:44px;
+    }
+
+
+    /*==============================================
+      NOTES
+    ==============================================*/
+
+    .notes-card{
+        width:100%;
+        box-sizing:border-box;
+    }
+
+    .notes-card textarea{
+        width:100%;
+        max-width:100%;
+        min-height:130px;
+        box-sizing:border-box;
+    }
+
+
+    /*==============================================
+      SAVED ITEMS
+    ==============================================*/
+
+    .saved-item{
+        min-width:0;
+    }
+
+    .saved-item-content{
+        min-width:0;
+    }
+
+    .saved-item-content strong{
+        max-width:100%;
+    }
+
+
+    /*==============================================
+      INTERVIEW CARD
+    ==============================================*/
+
+    .interview-card{
+        width:100%;
+        box-sizing:border-box;
+        padding:17px;
+    }
+
+    .interview-question{
+        width:100%;
+        min-width:0;
+    }
+
+
+    /*==============================================
+      QUIZ
+    ==============================================*/
+
+    .quiz-container{
+        width:100%;
+        max-width:100%;
+    }
+
+    .quiz-question{
+        min-width:0;
+    }
+
+    .quiz-option{
+        align-items:flex-start;
+    }
+
+    .option-letter{
+        margin-top:1px;
+    }
+
+
+    /*==============================================
+      OUTPUT
+    ==============================================*/
+
+    .output-table{
+        overflow-x:auto;
+    }
+
+}
+
+
+@media (max-width:480px){
+
+    /*==============================================
+      CONTENT CARDS
+    ==============================================*/
+
+    .content-card{
+        padding:17px 15px;
+    }
+
+    .content-card h2{
+        font-size:19px;
+        line-height:1.4;
+    }
+
+    .content-card h3{
+        font-size:16px;
+        line-height:1.45;
+    }
+
+    .content-card p,
+    .content-card li{
+        font-size:14px;
+        line-height:1.75;
+    }
+
+
+    /*==============================================
+      SPECIAL BOXES
+    ==============================================*/
+
+    .definition-box,
+    .example-box,
+    .business-case,
+    .tips-box,
+    .errors-box,
+    .output-table{
+        padding:15px;
+    }
+
+
+    /*==============================================
+      CODE
+    ==============================================*/
+
+    .code-block{
+        padding:14px;
+        border-radius:11px;
+    }
+
+    .code-block pre{
+        font-size:11px;
+    }
+
+
+    /*==============================================
+      META
+    ==============================================*/
+
+    .topic-meta{
+        gap:6px;
+    }
+
+    .topic-meta span{
+        font-size:11px;
+        padding:6px 9px;
+    }
+
+
+    /*==============================================
+      PROGRESS
+    ==============================================*/
+
+    .learning-progress{
+        padding:14px;
+    }
+
+    .learning-progress-header{
+        font-size:12px;
+    }
+
+
+    /*==============================================
+      QUIZ
+    ==============================================*/
+
+    .quiz-question h3{
+        font-size:17px;
+        line-height:1.5;
+    }
+
+    .quiz-option{
+        padding:12px;
+        font-size:13px;
+    }
+
+
+    /*==============================================
+      NOTES
+    ==============================================*/
+
+    .notes-card textarea{
+        min-height:120px;
+        font-size:13px;
+    }
+
+}
+
+/*==================================================*
+* STEP 3 — DASHBOARD + MODULE RESPONSIVE UPGRADE
+* ADD ONLY — DELETE NOTHING
+*==================================================*/
+
+@media (max-width:992px){
+
+    /*==============================================
+      DASHBOARD GRIDS
+    ==============================================*/
+
+    .dashboard-grid{
+        grid-template-columns:repeat(2,minmax(0,1fr));
+    }
+
+    .learning-overview{
+        grid-template-columns:repeat(2,minmax(0,1fr));
+    }
+
+
+    /*==============================================
+      MODULE / FORMULA GRID
+    ==============================================*/
+
+    .module-grid,
+    .formula-grid{
+        grid-template-columns:repeat(2,minmax(0,1fr));
+    }
+
+
+    /*==============================================
+      HEADER
+    ==============================================*/
+
+    .learning-header-inner{
+        gap:12px;
+    }
+
+    .learning-search{
+        max-width:none;
+        min-width:0;
+    }
+
+    .learning-user-info{
+        display:none;
+    }
+
+
+    /*==============================================
+      LEARNING LAYOUT
+    ==============================================*/
+
+    .learning-layout{
+        grid-template-columns:220px minmax(0,1fr);
+    }
+
+}
+
+
+@media (max-width:768px){
+
+    /*==============================================
+      DASHBOARD
+    ==============================================*/
+
+    .dashboard-grid{
+        grid-template-columns:1fr;
+        gap:14px;
+    }
+
+    .dashboard-hero{
+        margin:18px 0;
+    }
+
+    .dashboard-card{
+        padding:19px;
+    }
+
+
+    /*==============================================
+      OVERVIEW
+    ==============================================*/
+
+    .learning-overview{
+        grid-template-columns:repeat(2,minmax(0,1fr));
+        gap:12px;
+    }
+
+    .overview-card{
+        padding:17px;
+    }
+
+    .overview-card h3{
+        font-size:22px;
+    }
+
+
+    /*==============================================
+      MODULES
+    ==============================================*/
+
+    .module-grid,
+    .formula-grid{
+        grid-template-columns:1fr;
+        gap:16px;
+    }
+
+    .module-card,
+    .formula-card{
+        padding:20px;
+    }
+
+
+    /*==============================================
+      MODULE INFO
+    ==============================================*/
+
+    .module-info{
+        align-items:flex-start;
+    }
+
+
+    /*==============================================
+      FORMULA FOOTER
+    ==============================================*/
+
+    .formula-footer{
+        width:100%;
+    }
+
+
+    /*==============================================
+      HEADER
+    ==============================================*/
+
+    .learning-header-inner{
+        flex-wrap:wrap;
+        padding:11px 14px;
+    }
+
+    .learning-brand{
+        flex:1;
+        min-width:0;
+    }
+
+    .learning-header-actions{
+        margin-left:auto;
+    }
+
+    .learning-search{
+        order:3;
+        flex-basis:100%;
+        width:100%;
+    }
+
+
+    /*==============================================
+      SIDEBAR
+    ==============================================*/
+
+    .learning-layout{
+        display:block;
+        padding:18px 14px;
+    }
+
+    .sidebar-toggle{
+        display:flex;
+    }
+
+    .learning-sidebar{
+        position:static;
+        width:100%;
+        max-width:100%;
+    }
+
+
+    /*==============================================
+      PAGE TITLE
+    ==============================================*/
+
+    .page-title{
+        margin-bottom:20px;
+    }
+
+    .page-title h1{
+        font-size:25px;
+    }
+
+    .page-title p{
+        font-size:14px;
+    }
+
+
+    /*==============================================
+      QUICK ACTIONS
+    ==============================================*/
+
+    .quick-actions{
+        width:100%;
+    }
+
+    .quick-action{
+        min-height:40px;
+    }
+
+
+    /*==============================================
+      SECTION HEADER
+    ==============================================*/
+
+    .section-header{
+        margin-bottom:18px;
+    }
+
+    .section-header h2{
+        font-size:23px;
+    }
+
+
+    /*==============================================
+      CATEGORY PILLS
+    ==============================================*/
+
+    .category-pills{
+        gap:7px;
+    }
+
+}
+
+
+@media (max-width:480px){
+
+    /*==============================================
+      OVERVIEW
+    ==============================================*/
+
+    .learning-overview{
+        grid-template-columns:1fr;
+    }
+
+    .overview-card{
+        padding:17px;
+    }
+
+    .overview-card h3{
+        font-size:21px;
+    }
+
+
+    /*==============================================
+      DASHBOARD
+    ==============================================*/
+
+    .dashboard-hero{
+        padding:19px;
+        border-radius:16px;
+    }
+
+    .dashboard-hero h1{
+        font-size:23px;
+        line-height:1.3;
+    }
+
+
+    /*==============================================
+      MODULE
+    ==============================================*/
+
+    .module-card,
+    .formula-card{
+        padding:18px;
+    }
+
+    .module-card h3{
+        font-size:20px;
+    }
+
+    .formula-card h3{
+        font-size:19px;
+    }
+
+
+    /*==============================================
+      HEADER
+    ==============================================*/
+
+    .learning-header-inner{
+        padding:10px 12px;
+    }
+
+    .learning-brand-icon{
+        width:37px;
+        height:37px;
+    }
+
+    .learning-brand-text strong{
+        font-size:14px;
+    }
+
+
+    /*==============================================
+      ACTIONS
+    ==============================================*/
+
+    .quick-actions{
+        flex-direction:column;
+    }
+
+    .quick-action{
+        width:100%;
+        justify-content:center;
+    }
+
+
+    /*==============================================
+      MODULE START
+    ==============================================*/
+
+    .module-start-btn{
+        width:100%;
+        min-height:42px;
+    }
+
+}
+
+
+@media (max-width:360px){
+
+    /*==============================================
+      EXTRA SMALL DEVICES
+    ==============================================*/
+
+    .dashboard-hero{
+        padding:17px;
+    }
+
+    .dashboard-card{
+        padding:16px;
+    }
+
+    .overview-card{
+        padding:15px;
+    }
+
+    .module-card,
+    .formula-card{
+        padding:16px;
+    }
+
+    .learning-brand-text strong{
+        font-size:13px;
+    }
+
+}
+
+/*==================================================*
+* STEP 4 — FINAL MOBILE UI POLISH
+* ADD ONLY — DELETE NOTHING
+*==================================================*/
+
+@media (max-width:768px){
+
+    /*==============================================
+      ALL BUTTONS
+    ==============================================*/
+
+    .learning-page button{
+        min-height:42px;
+    }
+
+    .learning-btn,
+    .learning-page button,
+    .bookmark-btn,
+    .lesson-complete,
+    .module-start-btn,
+    .quick-action{
+        touch-action:manipulation;
+    }
+
+
+    /*==============================================
+      FORM CONTROLS
+    ==============================================*/
+
+    .learning-page input,
+    .learning-page select,
+    .learning-page textarea{
+        width:100%;
+        max-width:100%;
+        box-sizing:border-box;
+        font-size:16px;
+    }
+
+    .filter-box input,
+    .filter-box select{
+        min-height:44px;
+    }
+
+
+    /*==============================================
+      SEARCH INPUT
+    ==============================================*/
+
+    .learning-search input{
+        min-height:44px;
+        padding-left:40px;
+        padding-right:42px;
+    }
+
+
+    /*==============================================
+      FOOTER
+    ==============================================*/
+
+    .learning-footer{
+        width:100%;
+        box-sizing:border-box;
+    }
+
+    .learning-footer-links{
+        width:100%;
+    }
+
+    .learning-footer-links a{
+        min-height:32px;
+        display:inline-flex;
+        align-items:center;
+    }
+
+
+    /*==============================================
+      TOAST
+    ==============================================*/
+
+    .learning-toast{
+        font-size:12px;
+        line-height:1.5;
+    }
+
+
+    /*==============================================
+      LOADING
+    ==============================================*/
+
+    .learning-loading{
+        min-height:140px;
+        padding:20px;
+        box-sizing:border-box;
+        text-align:center;
+    }
+
+
+    /*==============================================
+      TOOLTIP
+    ==============================================*/
+
+    [data-tooltip]::after{
+        display:none;
+    }
+
+
+    /*==============================================
+      IMAGES
+    ==============================================*/
+
+    .learning-page img,
+    .learning-content img,
+    .learning-container img{
+        max-width:100%;
+        height:auto;
+    }
+
+
+    /*==============================================
+      TEXT SAFETY
+    ==============================================*/
+
+    .learning-page h1,
+    .learning-page h2,
+    .learning-page h3,
+    .learning-page h4,
+    .learning-page h5,
+    .learning-page h6,
+    .learning-page p,
+    .learning-page a,
+    .learning-page span{
+        max-width:100%;
+    }
+
+
+    /*==============================================
+      LONG WORD / FORMULA SAFETY
+    ==============================================*/
+
+    .learning-page h1,
+    .learning-page h2,
+    .learning-page h3,
+    .learning-page h4,
+    .learning-page p,
+    .learning-page li,
+    .learning-page span,
+    .learning-page a{
+        overflow-wrap:anywhere;
+    }
+
+}
+
+
+@media (max-width:480px){
+
+    /*==============================================
+      SMALL SCREEN BUTTONS
+    ==============================================*/
+
+    .learning-btn,
+    .lesson-complete,
+    .bookmark-btn,
+    .module-start-btn{
+        width:100%;
+        justify-content:center;
+    }
+
+
+    /*==============================================
+      SMALL SCREEN FORMS
+    ==============================================*/
+
+    .learning-page input,
+    .learning-page select,
+    .learning-page textarea{
+        font-size:16px;
+    }
+
+
+    /*==============================================
+      FOOTER LINKS
+    ==============================================*/
+
+    .learning-footer-links{
+        flex-direction:column;
+        align-items:center;
+        gap:6px;
+    }
+
+
+    /*==============================================
+      LOADING
+    ==============================================*/
+
+    .learning-loading{
+        padding:30px 15px;
+    }
+
+
+    /*==============================================
+      TOAST
+    ==============================================*/
+
+    .learning-toast{
+        left:12px;
+        right:12px;
+        bottom:12px;
+        width:auto;
+        max-width:none;
+    }
+
+}
+
+
+@media (max-width:360px){
+
+    /*==============================================
+      EXTRA SMALL TOUCH TARGETS
+    ==============================================*/
+
+    .learning-page button,
+    .learning-btn,
+    .bookmark-btn,
+    .lesson-complete,
+    .module-start-btn{
+        min-height:44px;
+    }
+
+    .learning-page input,
+    .learning-page select{
+        min-height:44px;
+    }
+
+}

@@ -9,30 +9,30 @@
 * ROOT
 *==================================================*/
 
-:root {
+:root{
 
-    --module-primary: #16a34a;
-    --module-primary-dark: #15803d;
-    --module-primary-light: #dcfce7;
+    --module-primary:#16a34a;
+    --module-primary-dark:#15803d;
+    --module-primary-light:#dcfce7;
 
-    --module-blue: #2563eb;
-    --module-blue-light: #eff6ff;
+    --module-blue:#2563eb;
+    --module-blue-light:#eff6ff;
 
-    --module-bg: #f5f7fb;
-    --module-card: #ffffff;
+    --module-bg:#f5f7fb;
+    --module-card:#ffffff;
 
-    --module-text: #111827;
-    --module-muted: #64748b;
+    --module-text:#111827;
+    --module-muted:#64748b;
 
-    --module-border: #e5e7eb;
+    --module-border:#e5e7eb;
 
     --module-shadow:
-        0 4px 15px rgba(15, 23, 42, 0.06);
+        0 4px 15px rgba(15,23,42,.06);
 
     --module-shadow-hover:
-        0 10px 30px rgba(15, 23, 42, 0.10);
+        0 10px 30px rgba(15,23,42,.10);
 
-    --module-radius: 16px;
+    --module-radius:16px;
 }
 
 
@@ -40,22 +40,28 @@
 * RESET
 *==================================================*/
 
-* {
-    box-sizing: border-box;
+*,
+*::before,
+*::after{
+    box-sizing:border-box;
 }
 
-html {
-    scroll-behavior: smooth;
+html{
+    scroll-behavior:smooth;
+    width:100%;
+    max-width:100%;
+    overflow-x:hidden;
 }
 
-body {
+body{
+    margin:0;
+    padding:0;
 
-    margin: 0;
-    padding: 0;
+    width:100%;
+    max-width:100%;
 
-    background: var(--module-bg);
-
-    color: var(--module-text);
+    background:var(--module-bg);
+    color:var(--module-text);
 
     font-family:
         Poppins,
@@ -66,7 +72,25 @@ body {
         Arial,
         sans-serif;
 
-    line-height: 1.6;
+    line-height:1.6;
+
+    overflow-x:hidden;
+}
+
+img,
+svg,
+video,
+canvas{
+    max-width:100%;
+    height:auto;
+}
+
+button,
+input,
+select,
+textarea{
+    max-width:100%;
+    font-family:inherit;
 }
 
 
@@ -74,15 +98,16 @@ body {
 * MAIN CONTAINER
 *==================================================*/
 
-.module-container {
+.module-container{
 
-    width: 100%;
+    width:100%;
+    max-width:1250px;
 
-    max-width: 1250px;
+    margin:0 auto;
 
-    margin: 0 auto;
+    padding:30px 28px 70px;
 
-    padding: 30px 28px 70px;
+    min-width:0;
 }
 
 
@@ -90,58 +115,56 @@ body {
 * BACK BUTTON
 *==================================================*/
 
-.back-btn {
+.back-btn{
 
-    display: inline-flex;
+    display:inline-flex;
 
-    align-items: center;
+    align-items:center;
+    justify-content:center;
 
-    gap: 9px;
+    gap:9px;
 
-    margin-bottom: 22px;
+    margin-bottom:22px;
 
-    padding: 9px 15px;
+    padding:9px 15px;
 
-    border: 1px solid var(--module-border);
+    border:1px solid var(--module-border);
 
-    border-radius: 9px;
+    border-radius:9px;
 
-    background: #ffffff;
+    background:#fff;
 
-    color: var(--module-primary-dark);
+    color:var(--module-primary-dark);
 
-    font-size: 13px;
+    font-size:13px;
+    font-weight:600;
 
-    font-weight: 600;
-
-    text-decoration: none;
+    text-decoration:none;
 
     box-shadow:
-        0 2px 8px rgba(15, 23, 42, 0.04);
+        0 2px 8px rgba(15,23,42,.04);
 
     transition:
-        background 0.2s ease,
-        color 0.2s ease,
-        transform 0.2s ease,
-        box-shadow 0.2s ease;
+        background .2s ease,
+        color .2s ease,
+        transform .2s ease,
+        box-shadow .2s ease;
 }
 
-.back-btn i {
-
-    font-size: 13px;
-
+.back-btn i{
+    font-size:13px;
 }
 
-.back-btn:hover {
+.back-btn:hover{
 
-    background: var(--module-primary-light);
+    background:var(--module-primary-light);
 
-    color: var(--module-primary-dark);
+    color:var(--module-primary-dark);
 
-    transform: translateX(-3px);
+    transform:translateX(-3px);
 
     box-shadow:
-        0 5px 15px rgba(15, 23, 42, 0.08);
+        0 5px 15px rgba(15,23,42,.08);
 }
 
 
@@ -149,23 +172,26 @@ body {
 * MODULE HEADER
 *==================================================*/
 
-.module-header {
+.module-header{
 
-    position: relative;
+    position:relative;
 
-    overflow: hidden;
+    width:100%;
+    max-width:100%;
 
-    background: var(--module-card);
+    overflow:hidden;
 
-    border: 1px solid var(--module-border);
+    background:var(--module-card);
 
-    border-radius: var(--module-radius);
+    border:1px solid var(--module-border);
 
-    padding: 30px;
+    border-radius:var(--module-radius);
 
-    margin-bottom: 22px;
+    padding:30px;
 
-    box-shadow: var(--module-shadow);
+    margin-bottom:22px;
+
+    box-shadow:var(--module-shadow);
 }
 
 
@@ -173,17 +199,17 @@ body {
 * HEADER ACCENT
 *==================================================*/
 
-.module-header::before {
+.module-header::before{
 
-    content: "";
+    content:"";
 
-    position: absolute;
+    position:absolute;
 
-    top: 0;
-    left: 0;
+    top:0;
+    left:0;
 
-    width: 100%;
-    height: 4px;
+    width:100%;
+    height:4px;
 
     background:
         linear-gradient(
@@ -199,13 +225,15 @@ body {
 * MODULE INFO
 *==================================================*/
 
-.module-info {
+.module-info{
 
-    display: flex;
+    display:flex;
 
-    align-items: center;
+    align-items:center;
 
-    gap: 20px;
+    gap:20px;
+
+    min-width:0;
 }
 
 
@@ -213,19 +241,19 @@ body {
 * MODULE ICON
 *==================================================*/
 
-.module-icon {
+.module-icon{
 
-    width: 72px;
-    height: 72px;
+    width:72px;
+    height:72px;
 
-    display: flex;
+    display:flex;
 
-    align-items: center;
-    justify-content: center;
+    align-items:center;
+    justify-content:center;
 
-    flex-shrink: 0;
+    flex:0 0 72px;
 
-    border-radius: 18px;
+    border-radius:18px;
 
     background:
         linear-gradient(
@@ -234,63 +262,68 @@ body {
             #f0fdf4
         );
 
-    color: var(--module-primary);
+    color:var(--module-primary);
 
-    font-size: 30px;
+    font-size:30px;
 
     box-shadow:
-        inset 0 0 0 1px rgba(22, 163, 74, 0.08);
+        inset 0 0 0 1px rgba(22,163,74,.08);
 }
 
 
 /*==================================================*
-* MODULE TITLE
+* MODULE TEXT
 *==================================================*/
 
-.module-info h1 {
-
-    margin: 0;
-
-    color: var(--module-primary);
-
-    font-size: 14px;
-
-    font-weight: 700;
-
-    text-transform: uppercase;
-
-    letter-spacing: 0.8px;
+.module-info > div{
+    min-width:0;
+    flex:1;
 }
 
-.module-info h2 {
+.module-info h1{
 
-    margin: 2px 0 7px;
+    margin:0;
 
-    color: var(--module-text);
+    color:var(--module-primary);
 
-    font-size: clamp(25px, 4vw, 34px);
+    font-size:14px;
+    font-weight:700;
 
-    font-weight: 700;
+    text-transform:uppercase;
 
-    line-height: 1.2;
+    letter-spacing:.8px;
+
+    overflow-wrap:anywhere;
 }
 
+.module-info h2{
 
-/*==================================================*
-* MODULE DESCRIPTION
-*==================================================*/
+    margin:2px 0 7px;
 
-.module-info p {
+    color:var(--module-text);
 
-    max-width: 850px;
+    font-size:clamp(25px,4vw,34px);
 
-    margin: 0;
+    font-weight:700;
 
-    color: var(--module-muted);
+    line-height:1.2;
 
-    font-size: 14px;
+    overflow-wrap:anywhere;
+}
 
-    line-height: 1.7;
+.module-info p{
+
+    max-width:850px;
+
+    margin:0;
+
+    color:var(--module-muted);
+
+    font-size:14px;
+
+    line-height:1.7;
+
+    overflow-wrap:anywhere;
 }
 
 
@@ -298,19 +331,22 @@ body {
 * PROGRESS CARD
 *==================================================*/
 
-.progress-card {
+.progress-card{
 
-    margin-bottom: 22px;
+    width:100%;
+    max-width:100%;
 
-    padding: 20px 22px;
+    margin-bottom:22px;
 
-    background: var(--module-card);
+    padding:20px 22px;
 
-    border: 1px solid var(--module-border);
+    background:var(--module-card);
 
-    border-radius: var(--module-radius);
+    border:1px solid var(--module-border);
 
-    box-shadow: var(--module-shadow);
+    border-radius:var(--module-radius);
+
+    box-shadow:var(--module-shadow);
 }
 
 
@@ -318,28 +354,36 @@ body {
 * PROGRESS TOP
 *==================================================*/
 
-.progress-top {
+.progress-top{
 
-    display: flex;
+    display:flex;
 
-    align-items: center;
+    align-items:center;
+    justify-content:space-between;
 
-    justify-content: space-between;
+    gap:15px;
 
-    margin-bottom: 10px;
+    margin-bottom:10px;
 
-    color: var(--module-text);
+    color:var(--module-text);
 
-    font-size: 14px;
+    font-size:14px;
+    font-weight:600;
 
-    font-weight: 600;
+    min-width:0;
 }
 
-.progress-top span:last-child {
+.progress-top span{
+    min-width:0;
+}
 
-    color: var(--module-primary);
+.progress-top span:last-child{
 
-    font-weight: 700;
+    color:var(--module-primary);
+
+    font-weight:700;
+
+    flex-shrink:0;
 }
 
 
@@ -347,17 +391,16 @@ body {
 * PROGRESS TRACK
 *==================================================*/
 
-.progress {
+.progress{
 
-    width: 100%;
+    width:100%;
+    height:9px;
 
-    height: 9px;
+    overflow:hidden;
 
-    overflow: hidden;
+    background:#e2e8f0;
 
-    background: #e2e8f0;
-
-    border-radius: 999px;
+    border-radius:999px;
 }
 
 
@@ -365,11 +408,10 @@ body {
 * PROGRESS BAR
 *==================================================*/
 
-.progress-bar {
+.progress-bar{
 
-    width: 0%;
-
-    height: 100%;
+    width:0%;
+    height:100%;
 
     background:
         linear-gradient(
@@ -378,9 +420,9 @@ body {
             #22c55e
         );
 
-    border-radius: inherit;
+    border-radius:inherit;
 
-    transition: width 0.4s ease;
+    transition:width .4s ease;
 }
 
 
@@ -388,17 +430,19 @@ body {
 * LESSON SEARCH
 *==================================================*/
 
-.lesson-search {
+.lesson-search{
 
-    position: relative;
+    position:relative;
 
-    display: flex;
+    display:flex;
+    align-items:center;
 
-    align-items: center;
+    width:100%;
+    max-width:100%;
 
-    width: 100%;
+    margin-bottom:24px;
 
-    margin-bottom: 24px;
+    min-width:0;
 }
 
 
@@ -406,17 +450,19 @@ body {
 * SEARCH ICON
 *==================================================*/
 
-.lesson-search i {
+.lesson-search i{
 
-    position: absolute;
+    position:absolute;
 
-    left: 16px;
+    left:16px;
 
-    color: #94a3b8;
+    color:#94a3b8;
 
-    font-size: 15px;
+    font-size:15px;
 
-    pointer-events: none;
+    pointer-events:none;
+
+    z-index:2;
 }
 
 
@@ -424,47 +470,46 @@ body {
 * SEARCH INPUT
 *==================================================*/
 
-.lesson-search input {
+.lesson-search input{
 
-    width: 100%;
+    width:100%;
+    min-width:0;
 
-    height: 48px;
+    height:48px;
 
-    padding: 0 18px 0 44px;
+    padding:0 18px 0 44px;
 
-    border: 1px solid var(--module-border);
+    border:1px solid var(--module-border);
 
-    border-radius: 11px;
+    border-radius:11px;
 
-    outline: none;
+    outline:none;
 
-    background: #ffffff;
+    background:#fff;
 
-    color: var(--module-text);
+    color:var(--module-text);
 
-    font-family: inherit;
-
-    font-size: 14px;
+    font-family:inherit;
+    font-size:14px;
 
     box-shadow:
-        0 2px 8px rgba(15, 23, 42, 0.03);
+        0 2px 8px rgba(15,23,42,.03);
 
     transition:
-        border-color 0.2s ease,
-        box-shadow 0.2s ease;
+        border-color .2s ease,
+        box-shadow .2s ease;
 }
 
-.lesson-search input:focus {
+.lesson-search input:focus{
 
-    border-color: var(--module-primary);
+    border-color:var(--module-primary);
 
     box-shadow:
-        0 0 0 3px rgba(22, 163, 74, 0.10);
+        0 0 0 3px rgba(22,163,74,.10);
 }
 
-.lesson-search input::placeholder {
-
-    color: #94a3b8;
+.lesson-search input::placeholder{
+    color:#94a3b8;
 }
 
 
@@ -472,9 +517,11 @@ body {
 * MODULE CONTENT
 *==================================================*/
 
-#moduleContent {
+#moduleContent{
 
-    width: 100%;
+    width:100%;
+    max-width:100%;
+    min-width:0;
 }
 
 
@@ -483,13 +530,18 @@ body {
 *==================================================*/
 
 .sections-container,
-.module-sections {
+.module-sections{
 
-    display: flex;
+    display:flex;
 
-    flex-direction: column;
+    flex-direction:column;
 
-    gap: 18px;
+    gap:18px;
+
+    width:100%;
+    max-width:100%;
+
+    min-width:0;
 }
 
 
@@ -498,29 +550,33 @@ body {
 *==================================================*/
 
 .section-card,
-.module-section {
+.module-section{
 
-    overflow: hidden;
+    width:100%;
+    max-width:100%;
+    min-width:0;
 
-    background: var(--module-card);
+    overflow:hidden;
 
-    border: 1px solid var(--module-border);
+    background:var(--module-card);
 
-    border-radius: var(--module-radius);
+    border:1px solid var(--module-border);
 
-    box-shadow: var(--module-shadow);
+    border-radius:var(--module-radius);
+
+    box-shadow:var(--module-shadow);
 
     transition:
-        transform 0.2s ease,
-        box-shadow 0.2s ease;
+        transform .2s ease,
+        box-shadow .2s ease;
 }
 
 .section-card:hover,
-.module-section:hover {
+.module-section:hover{
 
-    transform: translateY(-2px);
+    transform:translateY(-2px);
 
-    box-shadow: var(--module-shadow-hover);
+    box-shadow:var(--module-shadow-hover);
 }
 
 
@@ -528,21 +584,25 @@ body {
 * SECTION HEADER
 *==================================================*/
 
-.section-header {
+.section-header{
 
-    display: flex;
+    display:flex;
 
-    align-items: center;
+    align-items:center;
+    justify-content:space-between;
 
-    justify-content: space-between;
+    gap:15px;
 
-    gap: 15px;
+    width:100%;
+    max-width:100%;
 
-    padding: 18px 22px;
+    padding:18px 22px;
 
-    background: #ffffff;
+    background:#fff;
 
-    border-bottom: 1px solid var(--module-border);
+    border-bottom:1px solid var(--module-border);
+
+    min-width:0;
 }
 
 
@@ -550,15 +610,17 @@ body {
 * SECTION HEADER LEFT
 *==================================================*/
 
-.section-header-left {
+.section-header-left{
 
-    display: flex;
+    display:flex;
 
-    align-items: center;
+    align-items:center;
 
-    gap: 12px;
+    gap:12px;
 
-    min-width: 0;
+    min-width:0;
+
+    flex:1;
 }
 
 
@@ -566,25 +628,25 @@ body {
 * SECTION ICON
 *==================================================*/
 
-.section-icon {
+.section-icon{
 
-    width: 42px;
-    height: 42px;
+    width:42px;
+    height:42px;
 
-    display: flex;
+    display:flex;
 
-    align-items: center;
-    justify-content: center;
+    align-items:center;
+    justify-content:center;
 
-    flex-shrink: 0;
+    flex:0 0 42px;
 
-    border-radius: 11px;
+    border-radius:11px;
 
-    background: var(--module-primary-light);
+    background:var(--module-primary-light);
 
-    color: var(--module-primary);
+    color:var(--module-primary);
 
-    font-size: 17px;
+    font-size:17px;
 }
 
 
@@ -593,17 +655,20 @@ body {
 *==================================================*/
 
 .section-header h2,
-.section-title {
+.section-title{
 
-    margin: 0;
+    margin:0;
 
-    color: var(--module-text);
+    color:var(--module-text);
 
-    font-size: 17px;
+    font-size:17px;
+    font-weight:600;
 
-    font-weight: 600;
+    line-height:1.4;
 
-    line-height: 1.4;
+    min-width:0;
+
+    overflow-wrap:anywhere;
 }
 
 
@@ -612,21 +677,22 @@ body {
 *==================================================*/
 
 .lesson-count,
-.section-count {
+.section-count{
 
-    flex-shrink: 0;
+    flex:0 0 auto;
 
-    padding: 5px 10px;
+    padding:5px 10px;
 
-    background: var(--module-blue-light);
+    background:var(--module-blue-light);
 
-    color: var(--module-blue);
+    color:var(--module-blue);
 
-    border-radius: 999px;
+    border-radius:999px;
 
-    font-size: 11px;
+    font-size:11px;
+    font-weight:700;
 
-    font-weight: 700;
+    white-space:nowrap;
 }
 
 
@@ -635,13 +701,15 @@ body {
 *==================================================*/
 
 .lesson-list,
-.lessons {
+.lessons{
 
-    display: flex;
+    display:flex;
 
-    flex-direction: column;
+    flex-direction:column;
 
-    padding: 5px 0;
+    width:100%;
+
+    padding:5px 0;
 }
 
 
@@ -649,35 +717,39 @@ body {
 * LESSON ITEM
 *==================================================*/
 
-.lesson-item {
+.lesson-item{
 
-    display: flex;
+    display:flex;
 
-    align-items: center;
+    align-items:center;
 
-    gap: 13px;
+    gap:13px;
 
-    min-height: 58px;
+    width:100%;
+    max-width:100%;
 
-    padding: 10px 22px;
+    min-height:58px;
 
-    border-bottom: 1px solid #f1f5f9;
+    padding:10px 22px;
+
+    border-bottom:1px solid #f1f5f9;
+
+    min-width:0;
 
     transition:
-        background 0.2s ease,
-        padding-left 0.2s ease;
+        background .2s ease,
+        padding-left .2s ease;
 }
 
-.lesson-item:last-child {
-
-    border-bottom: none;
+.lesson-item:last-child{
+    border-bottom:none;
 }
 
-.lesson-item:hover {
+.lesson-item:hover{
 
-    background: #f8fafc;
+    background:#f8fafc;
 
-    padding-left: 27px;
+    padding-left:27px;
 }
 
 
@@ -685,25 +757,25 @@ body {
 * LESSON ICON
 *==================================================*/
 
-.lesson-icon {
+.lesson-icon{
 
-    width: 32px;
-    height: 32px;
+    width:32px;
+    height:32px;
 
-    display: flex;
+    display:flex;
 
-    align-items: center;
-    justify-content: center;
+    align-items:center;
+    justify-content:center;
 
-    flex-shrink: 0;
+    flex:0 0 32px;
 
-    border-radius: 8px;
+    border-radius:8px;
 
-    background: #f1f5f9;
+    background:#f1f5f9;
 
-    color: var(--module-muted);
+    color:var(--module-muted);
 
-    font-size: 13px;
+    font-size:13px;
 }
 
 
@@ -712,27 +784,29 @@ body {
 *==================================================*/
 
 .lesson-item a,
-.lesson-link {
+.lesson-link{
 
-    flex: 1;
+    flex:1;
 
-    min-width: 0;
+    min-width:0;
 
-    color: var(--module-text);
+    color:var(--module-text);
 
-    font-size: 14px;
+    font-size:14px;
+    font-weight:500;
 
-    font-weight: 500;
+    text-decoration:none;
 
-    text-decoration: none;
+    line-height:1.45;
 
-    transition: color 0.2s ease;
+    overflow-wrap:anywhere;
+
+    transition:color .2s ease;
 }
 
 .lesson-item a:hover,
-.lesson-link:hover {
-
-    color: var(--module-primary);
+.lesson-link:hover{
+    color:var(--module-primary);
 }
 
 
@@ -740,24 +814,24 @@ body {
 * LESSON ARROW
 *==================================================*/
 
-.lesson-arrow {
+.lesson-arrow{
 
-    flex-shrink: 0;
+    flex:0 0 auto;
 
-    color: #94a3b8;
+    color:#94a3b8;
 
-    font-size: 13px;
+    font-size:13px;
 
     transition:
-        color 0.2s ease,
-        transform 0.2s ease;
+        color .2s ease,
+        transform .2s ease;
 }
 
-.lesson-item:hover .lesson-arrow {
+.lesson-item:hover .lesson-arrow{
 
-    color: var(--module-primary);
+    color:var(--module-primary);
 
-    transform: translateX(3px);
+    transform:translateX(3px);
 }
 
 
@@ -765,21 +839,19 @@ body {
 * COMPLETED LESSON
 *==================================================*/
 
-.lesson-item.completed {
-
-    background: #f0fdf4;
+.lesson-item.completed{
+    background:#f0fdf4;
 }
 
-.lesson-item.completed .lesson-icon {
+.lesson-item.completed .lesson-icon{
 
-    background: var(--module-primary-light);
+    background:var(--module-primary-light);
 
-    color: var(--module-primary);
+    color:var(--module-primary);
 }
 
-.lesson-item.completed a {
-
-    color: var(--module-primary-dark);
+.lesson-item.completed a{
+    color:var(--module-primary-dark);
 }
 
 
@@ -788,19 +860,22 @@ body {
 *==================================================*/
 
 .no-results,
-.empty-state {
+.empty-state{
 
-    padding: 45px 20px;
+    width:100%;
+    max-width:100%;
 
-    text-align: center;
+    padding:45px 20px;
 
-    color: var(--module-muted);
+    text-align:center;
 
-    background: #ffffff;
+    color:var(--module-muted);
 
-    border: 1px dashed var(--module-border);
+    background:#fff;
 
-    border-radius: var(--module-radius);
+    border:1px dashed var(--module-border);
+
+    border-radius:var(--module-radius);
 }
 
 
@@ -808,26 +883,23 @@ body {
 * SCROLLBAR
 *==================================================*/
 
-::-webkit-scrollbar {
-
-    width: 8px;
+::-webkit-scrollbar{
+    width:8px;
 }
 
-::-webkit-scrollbar-track {
-
-    background: #f1f5f9;
+::-webkit-scrollbar-track{
+    background:#f1f5f9;
 }
 
-::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb{
 
-    background: #cbd5e1;
+    background:#cbd5e1;
 
-    border-radius: 999px;
+    border-radius:999px;
 }
 
-::-webkit-scrollbar-thumb:hover {
-
-    background: #94a3b8;
+::-webkit-scrollbar-thumb:hover{
+    background:#94a3b8;
 }
 
 
@@ -835,36 +907,30 @@ body {
 * TABLET
 *==================================================*/
 
-@media (max-width: 900px) {
+@media (max-width:900px){
 
-    .module-container {
-
-        padding: 24px 20px 55px;
+    .module-container{
+        padding:24px 20px 55px;
     }
 
-    .module-header {
-
-        padding: 26px 24px;
+    .module-header{
+        padding:26px 24px;
     }
 
-    .progress-card {
-
-        padding: 18px 20px;
+    .progress-card{
+        padding:18px 20px;
     }
 
-    .section-header {
-
-        padding: 17px 20px;
+    .section-header{
+        padding:17px 20px;
     }
 
-    .lesson-item {
-
-        padding: 10px 20px;
+    .lesson-item{
+        padding:10px 20px;
     }
 
-    .lesson-item:hover {
-
-        padding-left: 24px;
+    .lesson-item:hover{
+        padding-left:24px;
     }
 }
 
@@ -873,125 +939,143 @@ body {
 * MOBILE
 *==================================================*/
 
-@media (max-width: 600px) {
+@media (max-width:600px){
 
-    .module-container {
+    .module-container{
 
-        padding: 18px 14px 40px;
+        width:100%;
+        max-width:100%;
+
+        padding:18px 14px 40px;
     }
 
-    .back-btn {
+    .back-btn{
 
-        margin-bottom: 16px;
+        margin-bottom:16px;
 
-        font-size: 12px;
+        padding:8px 12px;
+
+        font-size:12px;
     }
 
-    .module-header {
+    .module-header{
 
-        padding: 22px 18px;
+        padding:20px 16px;
 
-        border-radius: 13px;
+        border-radius:13px;
     }
 
-    .module-info {
+    .module-info{
 
-        align-items: flex-start;
+        align-items:flex-start;
 
-        gap: 14px;
+        gap:14px;
     }
 
-    .module-icon {
+    .module-icon{
 
-        width: 54px;
-        height: 54px;
+        width:54px;
+        height:54px;
 
-        border-radius: 14px;
+        flex:0 0 54px;
 
-        font-size: 22px;
+        border-radius:14px;
+
+        font-size:22px;
     }
 
-    .module-info h1 {
-
-        font-size: 12px;
+    .module-info h1{
+        font-size:12px;
     }
 
-    .module-info h2 {
-
-        font-size: 24px;
+    .module-info h2{
+        font-size:24px;
     }
 
-    .module-info p {
-
-        font-size: 13px;
-
-        line-height: 1.6;
+    .module-info p{
+        font-size:13px;
+        line-height:1.6;
     }
 
-    .progress-card {
+    .progress-card{
 
-        padding: 16px;
+        padding:16px;
 
-        border-radius: 13px;
+        border-radius:13px;
     }
 
-    .lesson-search input {
-
-        height: 46px;
-
-        font-size: 13px;
+    .progress-top{
+        font-size:13px;
+        gap:10px;
     }
 
-    .section-header {
+    .lesson-search input{
 
-        padding: 15px 16px;
+        height:46px;
+
+        font-size:13px;
+    }
+
+    .section-header{
+
+        align-items:flex-start;
+
+        padding:14px 15px;
+
+        gap:10px;
+    }
+
+    .section-header-left{
+        align-items:flex-start;
+        gap:10px;
     }
 
     .section-header h2,
-    .section-title {
-
-        font-size: 15px;
+    .section-title{
+        font-size:15px;
     }
 
-    .section-icon {
+    .section-icon{
 
-        width: 36px;
-        height: 36px;
+        width:36px;
+        height:36px;
 
-        font-size: 15px;
+        flex:0 0 36px;
+
+        font-size:15px;
     }
 
     .lesson-count,
-    .section-count {
+    .section-count{
 
-        padding: 4px 8px;
+        padding:4px 8px;
 
-        font-size: 10px;
+        font-size:10px;
     }
 
-    .lesson-item {
+    .lesson-item{
 
-        gap: 10px;
+        gap:9px;
 
-        min-height: 54px;
+        min-height:54px;
 
-        padding: 9px 16px;
+        padding:9px 15px;
     }
 
-    .lesson-item:hover {
-
-        padding-left: 19px;
+    .lesson-item:hover{
+        padding-left:15px;
     }
 
     .lesson-item a,
-    .lesson-link {
+    .lesson-link{
 
-        font-size: 13px;
+        font-size:13px;
+
+        line-height:1.45;
     }
 
-    .lesson-arrow {
-
-        font-size: 12px;
+    .lesson-arrow{
+        font-size:12px;
     }
 }
 
@@ -1000,37 +1084,117 @@ body {
 * SMALL MOBILE
 *==================================================*/
 
-@media (max-width: 420px) {
+@media (max-width:420px){
 
-    .module-info {
+    .module-container{
 
-        flex-direction: column;
+        padding-left:10px;
+        padding-right:10px;
     }
 
-    .module-icon {
+    .module-info{
 
-        width: 50px;
-        height: 50px;
+        flex-direction:column;
+
+        gap:10px;
     }
 
-    .module-info h2 {
+    .module-icon{
 
-        font-size: 22px;
+        width:50px;
+        height:50px;
+
+        flex-basis:50px;
     }
 
-    .section-header {
-
-        align-items: flex-start;
+    .module-info h2{
+        font-size:22px;
     }
 
-    .section-header-left {
+    .module-info p{
+        font-size:12.5px;
+    }
 
-        align-items: flex-start;
+    .section-header{
+
+        flex-direction:column;
+
+        align-items:stretch;
+
+        gap:10px;
+    }
+
+    .section-header-left{
+        width:100%;
     }
 
     .lesson-count,
-    .section-count {
+    .section-count{
 
-        align-self: flex-start;
+        align-self:flex-start;
+    }
+
+    .lesson-item{
+
+        padding-left:12px;
+        padding-right:12px;
+    }
+
+    .lesson-icon{
+
+        width:30px;
+        height:30px;
+
+        flex-basis:30px;
+    }
+
+    .lesson-item a,
+    .lesson-link{
+        font-size:12.5px;
+    }
+
+    .lesson-arrow{
+        font-size:11px;
+    }
+}
+
+
+/*==================================================*
+* TOUCH DEVICES
+*==================================================*/
+
+@media (hover:none){
+
+    .section-card:hover,
+    .module-section:hover{
+        transform:none;
+        box-shadow:var(--module-shadow);
+    }
+
+    .lesson-item:hover{
+        padding-left:inherit;
+    }
+}
+
+
+/*==================================================*
+* REDUCED MOTION
+*==================================================*/
+
+@media (prefers-reduced-motion:reduce){
+
+    html{
+        scroll-behavior:auto;
+    }
+
+    *,
+    *::before,
+    *::after{
+
+        animation-duration:.01ms !important;
+
+        animation-iteration-count:1 !important;
+
+        transition-duration:.01ms !important;
     }
 }
