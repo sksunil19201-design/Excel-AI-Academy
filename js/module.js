@@ -554,7 +554,7 @@ function renderLessons(lessons) {
 
 
                 <a
-    href="/lesson"
+    href="lesson"
     class="lesson-link"
     data-module="${moduleData.id}"
     data-lesson="${lesson.id}"
