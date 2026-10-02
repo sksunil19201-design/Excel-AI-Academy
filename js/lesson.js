@@ -879,14 +879,16 @@ function createPracticalExampleCard(
 
             <div class="lesson-example-image">
 
-                <img
-                    src="${escapeHTML(example.image)}"
-                    alt="${escapeHTML(
-                        example.imageAlt ||
-                        "Excel Practical Example"
-                    )}"
-                    loading="lazy"
-                >
+<img
+    src="${escapeHTML(
+        "/Excel-AI-Academy/" + example.image
+    )}"
+    alt="${escapeHTML(
+        example.imageAlt ||
+        "Excel Practical Example"
+    )}"
+    loading="lazy"
+>
 
                 ${
                     example.imageCaption
